@@ -27,6 +27,8 @@ class Frontend extends ApiFrontend {
 	function init(){
 		parent::init();
 		$this->initLocations();
+
+        $this->template->trySet('pagename',$this->page);
 		
 
 		//$this->dbConnect();
