@@ -100,10 +100,7 @@ class Frontend extends ApiFrontend {
 		return '<a id="'.$e.'" rel="'.$email.'">Scrambled. Use JavaScript.</a>';
 	}
 	function defaultTemplate(){
-		if($_GET['alt-template']){
-			$this->api->stickyGET('alt-template');
-			return array('alt-shared','_top');
-		}
+		if($this->page=='index')return array('index');
 		return parent::defaultTemplate();
 	}
 }
