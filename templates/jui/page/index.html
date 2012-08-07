@@ -1,0 +1,98 @@
+<script type="text/javascript">
+// $(function(){
+    // $('li.newsletter a').click(function(){
+        // $(this).univ().dialogURL('Newsletter', '/newsletter.html?cut_page=1');
+        // alert('1');
+        // return false;
+    // });
+// });
+// $(document).ready(function(){
+	// $('.project>a').mouseover(function() {
+		// $(this).find('i,b').fadeIn('fast');
+	// }).mouseleave(function(){
+		// $(this).find('i,b').fadeOut('fast');
+	// });
+	
+// });
+</script>
+<div class="hero">
+	<div class="wrapper">
+		<div class="hr hr-small"></div>
+		<div class="hero-heading"><?editable?>statement
+		Agile develops <a href="http://agiletoolkit.org/">flexible</a> &amp; <a href="http://agiletoolkit.org">unique</a> web
+		software for start-up companies<br/>which enables them to be <a href="http://agiletoolkit.org/">competitive</a> &amp;
+		<a href="http://agiletoolkit.org/">successful</a> worldwide.<?/?></div>
+		
+		<?Slides2?>
+		<div id="<?$_name?>">
+			<div class="project-description">
+				<h2><?label?>SortMyBooksOnline<?/label?></h2>
+				<p><?short_description?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<?/?></p>
+				<div class="hr hr-small"></div>
+				<div class="icon-32-wdesc"><img src="/templates/jui/images/icon-casestudy.png" alt="" /><a href="/project/<?$url?>/">Explore this Case Study</a><br/><span class="comment">Extra info and screenshots.</span></div>
+			</div>
+			<div class="project">
+				<a id="<?$_name?>_thumb" href="/project/<?$url?>/"><i><img src="/templates/jui/images/explore-casestudy.png" alt="" width="191" height="73" /></i><b></b></a>
+				<div class="project-screen">
+					<div class="project-navigation"><ul class="project-indicator">
+					<?Bullets?>
+					<?rows?>
+					<?row?>
+						<li class="<?$class?>"><a href="<?$href?>"></a></li>
+					<?/row?>
+					<?/rows?>
+					<?/Bullets?>
+					<?$bullet?></ul><a class="project-next" href="<?$next?>"></a></div>
+				</div>
+				<div class="project-holder">
+					<div><i><b></b></i><img src="<?$thumb?>" alt="<?$_name?>" /></div>
+				</div>
+			</div>
+		</div>
+		<?/Slides2?>
+	</div>
+</div>
+<div id="stripe-section">
+	<div class="wrapper">
+		<div class="col-layout c3">
+			<div id="atk">
+				<h3>Agile Toolkit 4</h3>
+				<div><img src="<?template?>images/icon-atk.png<?/?>" alt="Agile Toolkit" width="64" height="45" />
+				<?editable?>toolkit
+				A new — more efficient way to build Web Software. Our company is behind this OpenSource PHP5 framework.
+				<?/?>
+				<div class="learnmore">
+				<a href="http://new.agiletoolkit.org/">Agile Toolkit Website</a><i class="icon icon-raquo icon-right"></i></div>
+				</div>
+			</div>
+			<div id="latest-blog">
+				<h3>From the <a href="/blog">blog</a></h3>
+				<?LastBlogRow?>
+				<?rows?>
+				<?row?>
+				<a href="/blog/<?$url?>" class="blog-img"><div class="blog-comment-cloud" id="<?$_name?>_comment_<?$id?>"><?CommentContainer?><i></i><?comment_count?>123<?/?><?/CommentContainer?></div><img src="<?$index_image?>" alt="" width="300" height="61" /></a>
+				<h4><a href="/blog/<?$url?>"><?title?>Gita's first post here<?/title?></a></h4>
+				<p><?short_descr?>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Pellentesque eget odio quam.<?/short_descr?></p>
+				<?/row?>
+				<?/rows?>
+				<?/LastBlogRow?>
+				<!--
+				<h4><a href="#">Gita's first post here</a></h4>
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Pellentesque eget odio quam.</p>
+				-->
+			</div>
+			<div id="social-buttons">
+				<h3>Get updates from</h3>
+				<ul>
+					<li class="twitter"><a href="http://twitter.com/agiletech_ie" target="_blank"></a></li>
+					<li class="facebook"><a href="http://www.facebook.com/pages/Agile-Technologies/169111942919" target="_blank"></a></li>
+					<li class="linkedin"><a href="http://www.linkedin.com/companies/agile-technologies-limited" target="_blank"></a></li>
+					<li class="newsletter"><a href="/newsletter.html"></a></li>
+				</ul>
+				<div class="learnmore">
+					<a href="/contact/">Contact us</a><i class="icon icon-raquo icon-right"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

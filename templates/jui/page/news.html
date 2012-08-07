@@ -1,0 +1,25 @@
+<h1 class="wimg"><img src="<?template?>images/heading-news.png<?/?>" height="40" width="101" alt="News" /></h1>
+<div class="news-year">
+<?YearsList?>
+<?rows?>
+    <?row?>
+	<div><a href="/news/<?$year?>/"<?$class?>><?$year?></a></div>
+    <?/row?>
+	<div><a href="?" class="selection darkblue">2010</a></div>
+	<div><a href="#">2009</a></div>
+	<div><a href="#">2008</a></div>
+<?/rows?>
+<?/YearsList?>
+</div>
+
+<?NewsList?>
+<div id="<?$_name?>" class="news-list">
+
+<?rows?>
+<?row?>
+<div><a href="/news/<?$year?>/<?$url?>"><?title?>Duis aute irure dolor in reprehenderit in voluptate veli<?/?></a><span class="comment"><?formated_date?>May 21st, 2010<?/?></span></div>
+<?/row?>
+<?/rows?>
+</div>
+<div class="clear"></div>
+<?/NewsList?>

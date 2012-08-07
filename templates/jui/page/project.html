@@ -1,0 +1,45 @@
+<?PortfolioOne?>
+<div id="<?$_name?>">
+<?rows?>
+<?row?>
+<h1><?label?>Sort My Books Online<?/label?></h1>
+<span class="project-url"><!-- <i class="icon icon-fav-smbo"></i> -->Visit website: <a href="http://<?$www_url?>"><?www_url?>sortmybooksonline.com<?/www_url?></a></span>
+<?description?>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="image clearing">
+	<div class="image-wrap"><img src="templates/jui/temp/smbo-login.jpg" alt="SMBO Login page" width="768" height="481" /></div>
+	<div class="image-comment">Fancy looking SMBO login page.</div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="image clearing">
+	<div class="image-wrap"><img src="templates/jui/temp/smbo-front.jpg" alt="SMBO Front page" width="768" height="833" /></div>
+	<div class="image-comment">Fancy looking SMBO login page.</div>
+</div>
+<?/description?>
+<?/row?>
+<?/rows?>
+</div>
+<div class="hr"></div>
+<?/PortfolioOne?>
+<h3>Read Other Case Studies</h3>
+<div class="project-grid">
+	<div>
+	<?PortfolioRandomList?>
+		<?rows?>
+		<?row?>
+		<a href="/project/<?$url?>"><i><b></b><img src="/<?$small_thumb?>" /></i><span><?label?>Label title<?/label?></span></a>
+		<?/row?>
+		<?/rows?>
+	<?/PortfolioRandomList?>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('body').attr("id","");$('html').css("height","100%");
+	$('#footer_guard').css("height","8em");
+	$('.project-grid>div>a:nth-child(4n)').css("marginRight","0");
+});
+</script>
