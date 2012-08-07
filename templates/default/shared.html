@@ -22,24 +22,17 @@
 	</head>
 	<body id="<?$pagename?>">
 		<div id="atk-layout" class="atk-wrapper">
-			<div id="header">
-				<?logo?>Elexu Technologies<?/logo?>
-				<div id="header-right">
-				<ul id="nav">
-				
-					<li><a title="About" href="/company/">About</a></li>
-					
-					<li><a title="Services" href="/services/">Services</a></li>
-					
-					<li><a title="Products" href="/products/">Products</a></li>
-					
-					<li><a title="Portfolio" href="/work/">Portfolio</a></li>
-					
-					<li><a title="Blog" href="/blog/">Blog</a></li>
-					
-					<li><a title="Contact" href="/contact/">Contact</a></li>
-					
-				</ul>
+			<div class="atk-row" id="header">
+				<div class="span2"><?logo?><a href="/"><img src="<?template?>images/logo.png<?/?>" /></a><?/logo?></div>
+				<div class="span9 offset1">
+					<ul id="nav">
+						<li><a title="About" href="/company/">About</a></li>
+						<li><a title="Services" href="/services/">Services</a></li>
+						<li><a title="Products" href="/products/">Products</a></li>
+						<li><a title="Portfolio" href="/work/">Portfolio</a></li>
+						<li><a title="Blog" href="/blog/">Blog</a></li>
+						<li><a title="Contact" href="/contact/">Contact</a></li>						
+					</ul>
 				</div>
 			</div>
 			<?$Content?>
