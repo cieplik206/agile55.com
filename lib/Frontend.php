@@ -100,7 +100,7 @@ class Frontend extends ApiFrontend {
 		return '<a id="'.$e.'" rel="'.$email.'">Scrambled. Use JavaScript.</a>';
 	}
 	function defaultTemplate(){
-		if($this->page=='index')return array('index');
+		//if($this->page=='index')return array('index');
 		return parent::defaultTemplate();
 	}
 }
