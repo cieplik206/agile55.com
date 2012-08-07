@@ -46,7 +46,6 @@ class Frontend extends ApiFrontend {
 		
 		$this->addMenu();
 
-		$this->template->trySet('page',$this->page);
 	}
 	function addMenu(){
 		return;
