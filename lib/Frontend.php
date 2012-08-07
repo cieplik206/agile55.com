@@ -1,6 +1,5 @@
 <?
-class AgileWeb extends ApiFrontend {
-	protected $page_class='AWPage';
+class Frontend extends ApiFrontend {
 
 	public $html_title = false;
 	public $html_descr = false;
@@ -30,10 +29,10 @@ class AgileWeb extends ApiFrontend {
 		$this->initLocations();
 		
 
-		$this->dbConnect();
-		$this->auth=$this->add('SQLAuth');
-		$this->auth->setSource('admin','email','password');
-		$this->auth->usePasswordEncryption('sha1');
+		//$this->dbConnect();
+		//$this->auth=$this->add('SQLAuth');
+		//$this->auth->setSource('admin','email','password');
+		//$this->auth->usePasswordEncryption('sha1');
 
 		$this->add('jUI');
 		$this->js()
@@ -45,10 +44,10 @@ class AgileWeb extends ApiFrontend {
 		
 		$this->addMenu();
 
-		$this->initLayout();
 		$this->template->trySet('page',$this->page);
 	}
 	function addMenu(){
+		return;
 		$m=$this->add('AWMenu');
 
 		//$m->addMenuItem('Home','index');

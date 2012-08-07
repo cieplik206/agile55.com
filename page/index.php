@@ -2,7 +2,7 @@
 class page_index extends AWPage {
 	function init(){
 		parent::init();
-		$this->api->jui->addStylesheet('front','.css',true);
+		//$this->api->jui->addStylesheet('front','.css',true);
 		// $this->add('AgileSlides',null,'Slides','Slides')
 			// ->setSource($this->api->front_slides)
 			// ;
