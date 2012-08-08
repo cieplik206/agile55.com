@@ -1,15 +1,93 @@
 /* General */
 .atk-wrapper {width:960px;padding-left:0;padding-right:0;}
+#content {padding-top:80px;}
+#content .section {padding:50px 0;}
+
 
 /* Styling */
 a {text-decoration:none;}
 
+/* Typography */
+body {font-size:14px;}
+h1 {font-size:3em;font-weight:normal;line-height:1.1;margin-bottom:1.2em;}
+h2 {font-size:2em;}
+h1+.punchline {margin-top:-1.2em;}
+.punchline {font-size:1.8em;line-height:1.2;margin-bottom:1.2em;}
 
 /* Header */
-#header {background:url(../images/header-shadow.png) no-repeat bottom left;padding:15px 0 40px 0;}
-#header ul#navigation, #header ul#navigation li {list-style-type:none;padding:0;margin:0;}
-#header ul#navigation {float:right;}
-#header ul#navigation li {font-size:14px;margin-left:40px;float:left;}
+#header {/* border-bottom:1px solid #ced4d9; */background:url(../images/texture-blacksand.png) bottom;/* background:rgba(255,255,255,0.95); */font-size:20px;line-height:50px;text-shadow:0 -2px 0 #000;padding:15px 0;width:100%;position:fixed;top:0;left:0;z-index:999;}
+/* #header .shadow {background:url(../images/header-shadow.png) no-repeat bottom center;width:960px;height:25px;margin-left:-480px;position:absolute;top:100%;left:50%;} */
+#header a {/* color:#2f3c4f; */color:#bbb;}
+#header .logo a {display:block;font-size:0;line-height:0;}
+#header .navigation {text-align:center;}
+#header .navigation a {margin:0 30px;}
+#header .contact {position:relative;}
+#header .contact a {background:url(../images/icon-getintouch.png);width:68px;height:53px;position:absolute;top:-1px;right:0;}
+
+
+.section {min-height:300px;}
+
+
+/* About */
+#about, #footer {background:url(../images/texture-blacksand.png) top;color:#fff;text-shadow:0 -2px 0 #000;}
+
+
+/* Team */
+#team {background:url(../images/texture-cork.png);color:#403930;text-shadow:0 1px 0 #fff2e0;}
+#team h1 {text-align:center;}
+
+#team #team-block h2, #team #team-block h3 {margin-top:0;line-height:1;}
+#team #ourteam {background:url(../images/bg-teammember.png) no-repeat right top;overflow:hidden;height:300px;position:relative;}
+#team #ourteam>div {float:left;}
+/* #team #ourteam>span {position:absolute;right:27px;top:8px;background:url(../images/teammember-pin.png);width:52px;height:52px;} */
+#team #ourteam #team-members {width:280px;height:110px;margin-right:0px;padding:20px 0 20px 0px;}
+#team #ourteam #team-members .thumb-grid>a {float:left;width:65px;height:70px;padding:5px;font-size:0;line-height:0;position:relative;margin:0 15px 10px 0;}
+#team #ourteam #team-members .thumb-grid>a>img {position:relative;z-index:3;}
+#team #ourteam #team-members .thumb-grid>a>i, #team #ourteam #team-members .thumb-grid>a>b {position:absolute;width:89px;height:94px;top:-3px;left:-7px;}
+#team #ourteam #team-members .thumb-grid>a>i {background:url(../images/teammember-photo.png) no-repeat;z-index:1;}
+#team #ourteam #team-members .thumb-grid>a>b {background:url(../images/teammember-photo-sel.png) no-repeat;z-index:2;display:none;}
+#team #ourteam #team-members .thumb-grid>a.selected {top:-1px;}
+#team #ourteam #team-members .thumb-grid>a.selected i {display:none;}
+#team #ourteam #team-members .thumb-grid>a.selected b {display:block;}
+#team #ourteam #member-description {width:295px;padding:35px 35px 35px 20px;}
+#team #ourteam #member-description p {font-size:90%;}
+#team #ourteam #member-description .contacts {margin-top:1em;}
+#team #ourteam #member-description .contacts a {display:inline-block;margin:0 0.5em;}
+/*
+#team #ourteam #member-description .contacts div img {float:left;position:relative;top:-0.5em;}
+#team #ourteam #member-description .contacts img {display:inline-block;margin-right:0.6em;}
+#team #ourteam #member-description .contacts a {margin-right:2em;color:#656565;position:relative;top:-0.4em;}
+#team #ourteam #member-description .contacts a:hover {color:#000;}
+*/
+#team #team-block>div {width:270px;}
+#team #team-block>div:first-child {width:670px;}
+
+
+
+/* Services */
+#services {background:url(../images/texture-grid.png) left;color:#fff;text-shadow:0 1px 1px #2d3440;}
+#services h2 {white-space:nowrap;}
+
+
+/* Portfolio */
+#portfolio {background:url(../images/texture-stripes.png);color:#263140;text-shadow:0 1px 0 #fff;}
+#portfolio h1, #portfolio .punchline {text-align:center;}
+
+/* Contact */
+#contact {background:url(../images/texture-noise.png);color:#000;}
+
+/* Footer */
+/* #footer {background:url(../images/texture-blacksand.png);} */
+
+#footer {margin:0;height:auto;min-height:0 !important;}
+#footer .atk-wrapper {position:relative;}
+#footer .top {background:url(../images/icon-top.png);width:25px;height:44px;position:absolute;top:0;right:0;}
+
+
+
+
+
+
 
 /* Front */
 #index #what-we-do ul {list-style-image: url(../images/icon-gear.png);margin-left:20px;}
@@ -59,11 +137,15 @@ a {text-decoration:none;}
 #index #project-indicator>div>a.current {background-position:-7px 0;}
 
 
-#index {background:#fff url(../images/front-bg.png) repeat-x top;}
+/* #index {background:#fff url(../images/front-bg.png) repeat-x top;} */
 
+/*
 #index #nav {text-shadow:0 1px 0 rgba(255,255,255,0.7);}
 #index #nav .current {text-shadow:none;}
 #index #footer {background:#fff;}
+*/
+
+
 .hero {color:#2f3945;text-shadow:0 1px 0 rgba(255,255,255,0.7);}
 .hero-heading {font-size:26px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;text-align:center;line-height:36px;padding:20px 0 30px 0}
 .hero-heading span {color:#2c5f99;}

@@ -18,22 +18,275 @@
 				<?$document_ready?>
 			});
 		</script>
-
 	</head>
 	<body id="<?$pagename?>">
-		<div id="atk-layout" class="atk-wrapper">
-			<div class="atk-row" id="header">
-				<div class="span2"><?logo?><a href="<?page?>/<?/?>"><img src="<?template?>images/logo.png<?/?>" /></a><?/logo?></div>
-				<div class="span10">
-					<ul id="navigation">
-						<li><a title="About" href="<?page?>company<?/?>">About</a></li>
-						<li><a title="Services" href="<?page?>services<?/?>">Services</a></li>
-						<li><a title="Portfolio" href="<?page?>work<?/?>">Portfolio</a></li>
-						<li><a title="Contact" href="<?page?>contact<?/?>">Contact</a></li>						
-					</ul>
+		<div id="header">
+			<div class="atk-wrapper">
+				<div class="atk-row">
+					<div class="span2 logo"><?logo?><a href="<?page?>/<?/?>"><img src="<?template?>images/logo.png<?/?>" /></a><?/logo?></div>
+					<div class="span8 navigation">
+							<a title="About" href="<?page?>company<?/?>">About</a><a title="Services" href="<?page?>services<?/?>">Services</a><a title="Portfolio" href="<?page?>work<?/?>">Portfolio</a>
+					</div>
+					<div class="span2 contact">
+						<a title="Contact" href="<?page?>contact<?/?>"></a>
+					</div>
 				</div>
 			</div>
-			<?$Content?>
+			<div class="shadow"></div>
+		</div>
+		<div id="content">
+			<div id="about" class="section">
+				<div class="atk-wrapper">
+					<div class="atk-row">
+						<div class="span6">
+							<h1>Elexu Technologies is a <strong>web</strong> and <strong>mobile software</strong> company.</h1>
+							<p class="punchline">We focus on unique user experience, engaging design and interactivity.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+						<div class="span6">
+							<img src="http://reowatch.com/img/monitor_ipad_iphone.png" width="475" style="margin-top:3em" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="team" class="section">
+				<div class="atk-wrapper">
+				
+					<h1>We are few, but we are <strong>pretty good</strong>.</h1>					
+					<div class="atk-row">
+						<div class="span6">
+							<h2>Who we are</h2>
+							<?editable?>
+							<p>Agile Technologies is a specialized web agency in Dublin. We are usability, security and web development experts. Our team develops best solutions for SME’s around Ireland and aboard.</p>
+							<?/?>
+						</div>
+						<div class="span6">
+							<h2>Why us</h2>
+							<?editable?>
+							<p>Each project is unique in its own way. Our team has technical expertise to find the right solution for you. Agile way is to always collaborate with client to make project successful. Most of our projects is using Agile Toolkit - unique built framework to help deliver solutions quicker.</p>
+							<?/?>
+						</div>
+					</div>
+					<div class="atk-row">
+						<div class="span8">
+						
+							<?Team?>
+							<div id="<?$_name?>">
+	
+								<div id="ourteam">
+									<span></span>
+									<div id="team-members">
+										<div class="thumb-grid">
+										   <?bullet?>
+											<a <?selected?>class="selected"<?/?> href="<?$href?>"><i></i><b></b><img src="<?thumb?>temp/team-romans-on.jpg<?/?>" width="65" height="65" alt="" /></a>
+										   <?/?>
+										</div>
+									</div>
+									<div id="member-description">
+										<h4><?name?>Unknown Developer<?/?> <em><?title?>simply wandered in<?/?></em></h4>
+										<?about?>
+										<p><?descr?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+										aliquip ex ea commodo consequat.<?/?></p>
+										<div class="contacts">
+											<?twitterBlock?>
+											<a href="<?$twitter?>"><img src="<?template?>/images/teammember-twitter.png<?/?>" alt="" width="28" height="18" /></a>
+											<?/twitterBlock?>
+											<?facebookBlock?>
+											<a href="<?$facebook?>"><img src="<?template?>/images/teammember-facebook.png<?/?>" alt="" width="21" height="21" /></a>
+											<?/facebookBlock?>
+											<?linkedinBlock?>
+											<a href="<?$linkedin?>"><img src="<?template?>/images/teammember-linkedin.png<?/?>" alt="" width="21" height="21" /></a>
+											<?/linkedinBlock?>
+											<?googleBlock?>
+											<a href="<?$google?>"><img src="<?template?>/images/teammember-mail.png<?/?>" alt="" width="25" height="18" /></a>
+											<?/googleBlock?>
+											<?blogBlock?>
+											<a href="<?$blog?>"><img src="<?template?>/images/teammember-blog.png<?/?>" alt="" width="22" height="24" /></a>
+											<?/blogBlock?>
+											<?emailBlock?>
+											<?$email?><a href="mailto:"><img src="<?template?>/images/teammember-mail.png<?/?>" alt="" width="25" height="18" /></a>
+											<?/emailBlock?>
+										</div>
+										<?/?>
+						<!--
+										<?contacts?>
+										<div class="contacts">
+											<img src="<?template?>images/teammember-twitter.png<?/?>" alt="" width="28" height="18" /><a href="#">Twitter</a>
+											<img src="<?template?>images/teammember-mail.png<?/?>" alt="" width="25" height="18" /><a href="#">E-mail</a>
+										</div>
+										<?/?>
+						
+										<?$flip?>-->
+									</div>
+								</div>
+							</div>
+							<?/?>
+						
+						
+						</div>
+						<div class="span4">
+						
+							<h3>What people say about us</h3>
+							<?editable?>what-people-say-about-us
+							<div>
+								<p>“We’ve been extremely satisfied with the speed and professionalism of Agile Technologies team. You managed deliver a web solution for our existing mobile friend-finder in very short time-frame.”</p>
+								<div>Ronan Higgins<span>CEO, Locle.com, Ireland</span></div>
+							</div>
+							<div>
+								<p>“Agile Technologies managed to optimise our existing Web 2.0 system, and now it works much faster than before. It’s not so easy to find a company that does their work well. But they are doing their job PERFECTLY.”</p>
+								<div>Barry Cronin<span>CTO, www.transpoco.com, Ireland</span></div>
+							</div>
+							<?/?>
+						
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div id="services" class="section">
+				<div class="atk-wrapper">
+					<div class="atk-row">
+						<div class="span4">
+							<h1>We provide<br /> some <strong>hi-end</strong> services</h1>
+							<p class="punchline">Curabitur sed enim eget nisl semper molestie ac sit amet lacus. Quisque at tellus in magna venenatis.</p>
+							<p>Nunc at est ligula. Nunc accumsan mauris quis orci suscipit mollis. Morbi sapien orci, elementum in pharetra sit amet, tristique pellentesque felis. In aliquam ipsum et orci gravida elementum. In vitae ligula quis augue bibendum semper. Praesent ultrices felis non leo condimentum sagittis.</p>
+						</div>
+						<div class="span7 offset1">
+							<div class="atk-row">
+								<div class="span6">
+									<h2>Consulting</h2>
+									<ul>
+										<li>Curabitur lobortis sapien iaculis.</li>
+										<li>Nunc a eros ut arcu viverra non justo.</li>
+										<li>Integer a purus et nibh.</li>
+										<li>Duis sit amet nulla.</li>
+										<li>Donec quis risus sit.</li>
+									</ul>
+								</div>
+								<div class="span6">
+									<h2>Training</h2>
+									<ul>
+										<li>Curabitur lobortis sapien iaculis.</li>
+										<li>Nunc a eros ut arcu viverra non justo.</li>
+										<li>Integer a purus et nibh.</li>
+										<li>Duis sit amet nulla.</li>
+										<li>Donec quis risus sit.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="atk-row">
+								<div class="span6">
+									<h2>Design</h2>
+									<ul>
+										<li>Curabitur lobortis sapien iaculis.</li>
+										<li>Nunc a eros ut arcu viverra non justo.</li>
+										<li>Integer a purus et nibh.</li>
+										<li>Duis sit amet nulla.</li>
+										<li>Donec quis risus sit.</li>
+									</ul>
+								</div>
+								<div class="span6">
+									<h2>Development</h2>
+									<ul>
+										<li>Curabitur lobortis sapien iaculis.</li>
+										<li>Nunc a eros ut arcu viverra non justo.</li>
+										<li>Integer a purus et nibh.</li>
+										<li>Duis sit amet nulla.</li>
+										<li>Donec quis risus sit.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div id="portfolio" class="section">
+				<div class="atk-wrapper">
+				
+					<h1>Check <strong>our latest works</strong> out.</h1>
+					<p class="punchline">Curabitur lobortis sapien iaculis. Nunc a eros ut arcu viverra non justo.</p>
+					<div class="hero">
+						<div class="wrapper">
+							<?Slides2?>
+							<div id="<?$_name?>">
+								<div class="project-description">
+									<h2><?label?>SortMyBooksOnline<?/label?></h2>
+									<p><?short_description?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<?/?></p>
+									<!--<div class="icon-32-wdesc"><img src="/templates/jui/images/icon-casestudy.png" alt="" /> <a href="/project/<?$url?>/">Explore this Case Study</a><br/><span class="comment">Extra info and screenshots.</span></div>-->
+								</div>
+								<div class="project">
+									<a id="<?$_name?>_thumb" href="/project/<?$url?>/"><i><img src="/templates/jui/images/explore-casestudy.png" alt="" width="191" height="73" /></i><b></b></a>
+									<div class="project-screen">
+										<div class="project-navigation"><ul class="project-indicator">
+										<?Bullets?>
+										<?rows?>
+										<?row?>
+											<li class="<?$class?>"><a href="<?$href?>"></a></li>
+										<?/row?>
+										<?/rows?>
+										<?/Bullets?>
+										<?$bullet?></ul><a class="project-next" href="<?$next?>"></a></div>
+									</div>
+									<div class="project-holder">
+										<div><i><b></b></i><img src="<?$thumb?>" alt="<?$_name?>" /></div>
+									</div>
+								</div>
+							</div>
+							<?/Slides2?>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+			<div id="contact" class="section">
+				<div class="atk-wrapper">
+					
+					<div class="atk-row">
+						<div class="span8">
+							<h1>Don't be shy, say <strong>hello</strong>!</h1>
+							<p>Aenean adipiscing porttitor est, et sollicitudin turpis auctor nec. Nunc eleifend, libero sit amet semper malesuada, metus mauris blandit urna, ut aliquam ante turpis viverra ipsum.</p>
+							<?$Contact?>
+						</div>
+						<div class="span3 offset1">
+					        <div class="icon-32-wdesc" id="address"><a href="http://maps.google.co.uk/maps?q=52A+Berwick+Street,+London&hl=en&sll=51.523455,-0.013775&sspn=0.009172,0.021415&oq=52a+Berwick+St&t=h&hnear=52A+Berwick+St,+London+W1F+8SL,+United+Kingdom&z=16" alt="map"><img src="<?template?>images/icon-map.png<?/?>" alt="" height="32" width="32" />Agile Technologies Ltd</a>.<br/>52a Berwick St<br>London W1F 8SL<br/>United Kingdom</div>
+							<div class="hr hr-small"></div>
+							<div class="icon-32-wdesc" id="address"><img src="<?template?>images/icon-map.png<?/?>" alt="" height="32" width="32" />Agile Technologies Ltd.<br/>1st Floor, 61 Saint Assams Park<br/>Raheny<br/>Dublin 5, Ireland</div>
+							<div class="hr hr-small"></div>
+							<?editable?>
+							<h4>Call us</h4>
+							+353 (0) 1 443 3256
+<!--
+							<h4>or send us an e-mail</h4>
+							<a href="mailto:info@agiletech.ie">info@agiletech.ie</a>
+-->
+							<?/?>
+							<div class="hr hr-small"></div>
+							<div class="icon-32-wdesc"><img src="<?template?>images/icon-nda.png<?/?>" alt="" height="32" width="32" /><a href="/files/Agile_NDA.pdf">NDA Download</a><br/><span class="comment">Non-disclosure agreement</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="section">
+				<div class="atk-wrapper">
+					<a href="#" class="top"></a>
+					<h1>Footer</h1>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+<div style="display:none">
+		<div id="atk-layout" class="atk-wrapper">
+			<div id="content"><?$Content?></div>
 			<div id="atk-footer-guard"></div>
 		</div>
 		<?Footer?>
@@ -46,5 +299,6 @@
 		</div>
 		<?/?>
 		<div id="atk-growl-holder" class="atk-growl"></div>
+</div>
 	</body>
 </html>

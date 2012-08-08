@@ -1,5 +1,5 @@
 <?
-class AgileTeam extends AWView {
+class AgileTeam extends View {
 	/*
 	   This class implements multiple slides and ajax buttons for next/prev
 	 */
@@ -31,6 +31,7 @@ class AgileTeam extends AWView {
 		if($d) {
 			$d['email'] = $this->scramble($d['email'], '');
 			$this->template->set($d);
+            $this->template->setHTML('email',$d['email']);
 		}
 
 		try{
