@@ -29,9 +29,9 @@ class AgileTeam extends View {
 		$d=$this->data[$_GET[$this->name]];
 		if(!$d)$d=$this->data[$this->first_id];
 		if($d) {
-			$d['email'] = $this->scramble($d['email'], '');
+			//$d['email'] = $this->scramble($d['email'], '');
 			$this->template->set($d);
-            $this->template->setHTML('email',$d['email']);
+            //$this->template->setHTML('email',$d['email']);
 		}
 
 		try{
