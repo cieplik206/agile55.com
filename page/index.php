@@ -52,8 +52,8 @@ class page_index extends Page {
             //$m->addTransport('SES');
             $m->set($f->get());
             $m->set('subject','Contact Request from'.$f->get('name'));
-            $x=$m->send('info@elexu.com');
-            $this->js()->univ()->successMessage('Your message was delivered')->execute();
+            $x=$m->send('r@agiletech.ie');
+            $this->js()->univ()->alert('Your message was delivered')->execute();
 
 
         }
