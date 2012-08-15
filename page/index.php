@@ -27,10 +27,11 @@ array ( 5 => array ( 'name' => 'Gita Malinovska', 'title' => 'CEO', 'email' => '
 		
 		$f=$this->api->add('Form',null,'Contact')
 			;
-		$f->addField('line', 'name', 'Name')->setNotNull();
+		$f->addField('line', 'name', 'Company')->setNotNull();
 		$f->addField('line', 'email', 'E-mail')->setNotNull();
 		$f->addField('line', 'phone', 'Phone')->setNotNull();
-		$f->addField('text', 'message', 'Your Message');
+		$f->addField('checkbox', 'nda', 'Request Elexu Technologies to send signed NDA')->setNotNull();
+		$f->addField('text', 'message', 'Message');
         $f->addSubmit('Send');
 		
 	}

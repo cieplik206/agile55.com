@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title><?page_title?>Agile Toolkit<?/?></title>
+		<title><?page_title?>Elexu Technologies ™<?/?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="<?template?>images/favicon.ico<?/?>" type="image/x-icon"  />
 		<link rel="shortcut icon" href="<?template?>images/favicon.ico<?/?>" />
 		<link rel="stylesheet" type="text/css" href="<?template?>css/jquery-ui.css<?/?>" />
 		<link rel="stylesheet" type="text/css" href="<?template?>css/atk-main.css<?/?>" />
 		<link rel="stylesheet" type="text/css" href="<?template?>css/atk-custom.css<?/?>" />
+		<link rel="stylesheet" type="text/css" href="<?template?>css/lightbox.css<?/?>" />
 		<?$js_include?>
 		<!--[if IE 8]>
 			<link rel="stylesheet" type="text/css" href="<?template?>css/ie8.css<?/?>"/>
@@ -18,18 +19,49 @@
 				<?$document_ready?>
 			});
 		</script>
+		<script src="<?template?>js/lightbox.js<?/?>"></script>
+		<script src="<?template?>js/jquery.scrollTo-1.4.2-min.js<?/?>"></script>
+		<script src="<?template?>js/jquery.cycle.js<?/?>"></script>
+		<script>
+			$(function(){
+				$('#header a,.top').click(function(e){
+                    e.preventDefault();
+                    var dest=$(this).attr('href');
+                    if($(this).is('.logolink,.top'))dest='0';
+                    $(window).scrollTo(dest,'slow',{offset: -80});
+                });
+                
+			    $('#portfolio .hero .slides').cycle({
+			        fx:      'fade',
+			        timeout:  0,
+			        next:    '.hero-next',
+			        pager:   '.hero-navigation',
+			        pagerAnchorBuilder: pagerFactory
+			    });
+			
+			    function pagerFactory(idx, slide) {
+			        var s = idx > 2 ? ' style="display:none"' : '';
+			        return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+			    };
+                
+                
+                
+			});
+		</script>
 	</head>
 	<body id="<?$pagename?>">
 		<div id="header">
 			<div class="atk-wrapper">
 				<div class="atk-row">
-					<div class="span2 logo"><?logo?><a href="<?page?>/<?/?>"><img src="<?template?>images/logo.png<?/?>" /></a><?/logo?></div>
-					<div class="span8 navigation">
-							<a title="About" href="<?page?>company<?/?>">About</a><a title="Services" href="<?page?>services<?/?>">Services</a><a title="Portfolio" href="<?page?>work<?/?>">Portfolio</a>
+					<div class="span2 logo"><?logo?><a class="logolink" href="<?page?>/<?/?>"><img src="<?template?>images/logo.png<?/?>" /></a><?/logo?></div>
+					<div class="span10 navigation">
+							<a title="About" href="#people">People</a><a title="Services" href="#services">Services</a><a title="Services" href="#approach">Approach</a><a title="Portfolio" href="#portfolio">Portfolio</a><a title="Contact" href="#contact">Contact</a>
 					</div>
+<!--
 					<div class="span2 contact">
-						<a title="Contact" href="<?page?>contact<?/?>"></a>
+						<a title="Contact" href="#contact"></a>
 					</div>
+-->
 				</div>
 			</div>
 			<div class="shadow"></div>
@@ -37,38 +69,38 @@
 		<div id="content">
 			<div id="about" class="section">
 				<div class="atk-wrapper">
+<!-- 					<h1>Elexu Technologies is a web and mobile software company.</h1> -->
 					<div class="atk-row">
 						<div class="span6">
-							<h1>Elexu Technologies is a <strong>web</strong> and <strong>mobile software</strong> company.</h1>
-							<p class="punchline">We focus on unique user experience, engaging design and interactivity.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<h1>We are an IPTV, web and mobile software company.</h1>
+<!-- 							<h1>Elexu Technologies is <br />a <strong>web</strong> and <strong>mobile<br /> software</strong> company.</h1> -->
+							<p>Elexu Technologies is a creative software development and consultancy company based in the heart of Soho, London and is a wholly-owned subsidiary within the Elexu Portfolio group of companies. Our specialisation is in interactive Mobile-to-TV applications, from interactive games through to internet TV formats which engage their audiences via real-time interactions to produce a more realistic, responsive and entertaining means of communication between content producers and content viewers.</p>
+<!-- 							<p>We also have the capabilities to design and develop mobile applications and websites outside of the Mobile-to-TV and media-entertainment arena.  For customers who want a sophisticated but cost-effective website, mobile app or any other bespoke software programme, we can deliver on time and on budget.</p> -->
+
 						</div>
-						<div class="span6">
-							<img src="http://reowatch.com/img/monitor_ipad_iphone.png" width="475" style="margin-top:3em" />
+						<div class="span6" style="position:relative;">
+
+							<img src="<?template?>temp/test.png<?/?>" style="position:absolute;top:20px;right:0;" />
+<!-- 							<img src="http://reowatch.com/img/monitor_ipad_iphone.png" width="475" style="margin-top:3em" /> -->
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="team" class="section">
+			<div id="people" class="section">
 				<div class="atk-wrapper">
-				
-					<h1>We are few, but we are <strong>pretty good</strong>.</h1>					
-					<div class="atk-row">
-						<div class="span6">
-							<h2>Who we are</h2>
-							<?editable?>
-							<p>Agile Technologies is a specialized web agency in Dublin. We are usability, security and web development experts. Our team develops best solutions for SME’s around Ireland and aboard.</p>
-							<?/?>
+					<h1>People</h1>
+					<div class="atk-row atk-block">
+						<div class="span4">
+						<p>Our core team of experts work in-house in London but we have a huge advantage in having a long established network of contractors spread across Eastern and Western Europe which helps us to:</p>
+							<ul>
+								<li>Keep ours and  your costs down</li>
+								<li>Ramp up and bring additional<br />resources at short notice</li>
+								<li>Expand our expertise and capabilities</li>
+							</ul>
+							<p>We have a wealth of experience and expertise from diverse backgrounds in our closely knit team of engineers who are all very passionate about the work they do, being Artisans in code and design.</p>
 						</div>
-						<div class="span6">
-							<h2>Why us</h2>
-							<?editable?>
-							<p>Each project is unique in its own way. Our team has technical expertise to find the right solution for you. Agile way is to always collaborate with client to make project successful. Most of our projects is using Agile Toolkit - unique built framework to help deliver solutions quicker.</p>
-							<?/?>
-						</div>
-					</div>
-					<div class="atk-row">
 						<div class="span8">
+							<h2>Our Team</h2>
 						
 							<?Team?>
 							<div id="<?$_name?>">
@@ -83,30 +115,34 @@
 										</div>
 									</div>
 									<div id="member-description">
-										<h4><?name?>Unknown Developer<?/?> <em><?title?>simply wandered in<?/?></em></h4>
+										<h4><?name?>Unknown Developer<?/?><br /><em><?title?>simply wandered in<?/?></em></h4>
 										<?about?>
 										<p><?descr?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 										aliquip ex ea commodo consequat.<?/?></p>
-										<div class="contacts">
+										<div class="contacts small">
 											<?twitterBlock?>
-											<a href="<?$twitter?>"><img src="<?template?>/images/teammember-twitter.png<?/?>" alt="" width="28" height="18" /></a>
+											<span><a href="<?$twitter?>">Twitter</a></span>
 											<?/twitterBlock?>
 											<?facebookBlock?>
-											<a href="<?$facebook?>"><img src="<?template?>/images/teammember-facebook.png<?/?>" alt="" width="21" height="21" /></a>
+											<span><a href="<?$facebook?>">Facebook</a></span>
 											<?/facebookBlock?>
 											<?linkedinBlock?>
-											<a href="<?$linkedin?>"><img src="<?template?>/images/teammember-linkedin.png<?/?>" alt="" width="21" height="21" /></a>
+											<span><a href="<?$linkedin?>">LinkedIn</a></span>
 											<?/linkedinBlock?>
 											<?googleBlock?>
-											<a href="<?$google?>"><img src="<?template?>/images/teammember-mail.png<?/?>" alt="" width="25" height="18" /></a>
+											<span><a href="<?$google?>">E-Mail</a></span>
 											<?/googleBlock?>
+<!--
 											<?blogBlock?>
 											<a href="<?$blog?>"><img src="<?template?>/images/teammember-blog.png<?/?>" alt="" width="22" height="24" /></a>
 											<?/blogBlock?>
+-->
+<!--
 											<?emailBlock?>
 											<?$email?><a href="mailto:"><img src="<?template?>/images/teammember-mail.png<?/?>" alt="" width="25" height="18" /></a>
 											<?/emailBlock?>
+-->
 										</div>
 										<?/?>
 						<!--
@@ -123,21 +159,75 @@
 							</div>
 							<?/?>
 						
-						
+						</div>
+					</div>
+							<blockquote>If you are an expert engineer or designer with experience working in  interactive TV, Mobile-to-TV, interactive games or other interactive entertainment/media formats and would like to progress your career by joining a dynamic and creative team then please <a href="#contact">apply here</a> for our latest vacancies.</blockquote>
+				</div>
+			</div>
+			<div id="services" class="section">
+				<div class="atk-wrapper">
+					<h1>Services</h1>
+					<div class="atk-row">
+						<div class="span4">
+							<h3 class="w-img"><img src="<?template?>images/icon-display.png<?/?>" />Web Development</h3>
+							<p>What differentiates our development services from other high calibre development houses is the exceptional scalability and robustness of our technologies. You can be confident that whatever we design and build for you will be built with longevity and consistent performance in mind.</p>
+
 						</div>
 						<div class="span4">
+							<h3 class="w-img"><img src="<?template?>images/icon-gears.png<?/?>" />App Development</h3>
+							<p>We cater for a wide range of App development for both Mobile and Tablet including iPhone and Android, utilising HTML5 as a universal language that works across all the platforms. Our area of expertise lies in the complex field of Mobile-to-TV interactive applications for Internet Protocol Television (IPTV). </p>
+
+						</div>
+						<div class="span4">
+									<img src="<?template?>temp/trash.png<?/?>" class="trash" />
+
+
+						</div>
 						
-							<h3>What people say about us</h3>
-							<?editable?>what-people-say-about-us
-							<div>
-								<p>“We’ve been extremely satisfied with the speed and professionalism of Agile Technologies team. You managed deliver a web solution for our existing mobile friend-finder in very short time-frame.”</p>
-								<div>Ronan Higgins<span>CEO, Locle.com, Ireland</span></div>
-							</div>
-							<div>
-								<p>“Agile Technologies managed to optimise our existing Web 2.0 system, and now it works much faster than before. It’s not so easy to find a company that does their work well. But they are doing their job PERFECTLY.”</p>
-								<div>Barry Cronin<span>CTO, www.transpoco.com, Ireland</span></div>
-							</div>
-							<?/?>
+					</div>
+					<div class="atk-row">
+						<div class="span4">
+									<h3 class="w-img"><img src="<?template?>images/icon-beaker.png<?/?>" />Web Design</h3>
+									<p>A creative team of designers add the polish and chrome to our structured code to present the most up-to-date and cutting edge look and feel to whatever platform, application or programme we construct. Our designers are passionate about their craft and will work closely with you to ensure the design meets your requirements.</p>
+						</div>
+						<div class="span4">
+							<h3 class="w-img"><img src="<?template?>images/icon-sign.png<?/?>" />Consultancy</h3>
+							<p>Many corporations and content providers have ambitious projects which require a high degree of expert advice and specification. One of our key assets for these clients is our consultancy service for maintaining and optimizing network, security, server and storage infrastructures.</p>
+						</div>
+						<div class="span4">
+							<h3 class="w-img"><img src="<?template?>images/icon-tower.png<?/?>" />Support</h3>
+							<p>Our support services are tailored to each client's needs. It is in our best interests to ensure your software’s performance is maintained but is also supported 24/7 by experts on hand, and not outsourced. By providing a quality support service we help our business partners maintain high levels of user satisfaction.</p>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div id="approach" class="section">
+
+				<div class="atk-wrapper">
+				<h1>Approach</h1>
+					<div class="atk-row">
+						<div class="span4">
+					<h3 class="w-img"><img src="<?template?>images/icon-hat.png<?/?>" />Consultation</h3>
+					<p>Elexu Technologies takes a highly consultative approach to working with clients. This investment in our clients pays huge dividends for all parties involved. Through many years of delivering successful web, mobile and apps development projects, we know this approach consistently produces outstanding results for both our clients and ourselves.</p>
+						</div>
+						<div class="span4">
+					<h3 class="w-img"><img src="<?template?>images/icon-board.png<?/?>" />Project Management</h3>
+					<p>We excel at providing a robust project management process to ensure projects are delivered on time and within budget. In addition to using Agile methodologies to drive the development stream (sprints, scrums and iterative releases), we also employ leading task management and communication software to ensure all resources are coordinated in their activities, deliverables and timelines.</p>
+						</div>
+						<div class="span4">
+																<img src="<?template?>templates/default/temp/trash.png<?/?>" class="trash" />
+						</div>
+					</div>
+					<div class="atk-row">
+						<div class="span4">
+					<h3 class="w-img"><img src="<?template?>images/icon-coffee.png<?/?>" />Communication</h3>
+					<p>Clients of Elexu Technologies benefit from having a dedicated relationship manager. We pride ourselves on timely and transparent communication and aim to build enduring partnerships with all our clients as opposed to a transactional based relationships. We fundamentally believe a partnership approach is the foundation of our success.</p>
+						</div>
+						<div class="span4">
+					<h3 class="w-img"><img src="<?template?>images/icon-pulse.png<?/?>" />Support</h3>
+					<p>Our relationship with clients doesn’t end simply with the delivery of software. We invest in aftercare so our clients can rest assured that their projects are always up and running (99.9% availability). For mission critical applications we can provide our partners with 24/7 expert support or support on a pay per task basis.</p>
+						</div>
+						<div class="span4">
 						
 						</div>
 					</div>
@@ -145,76 +235,93 @@
 
 				</div>
 			</div>
-			<div id="services" class="section">
-				<div class="atk-wrapper">
-					<div class="atk-row">
-						<div class="span4">
-							<h1>We provide<br /> some <strong>hi-end</strong> services</h1>
-							<p class="punchline">Curabitur sed enim eget nisl semper molestie ac sit amet lacus. Quisque at tellus in magna venenatis.</p>
-							<p>Nunc at est ligula. Nunc accumsan mauris quis orci suscipit mollis. Morbi sapien orci, elementum in pharetra sit amet, tristique pellentesque felis. In aliquam ipsum et orci gravida elementum. In vitae ligula quis augue bibendum semper. Praesent ultrices felis non leo condimentum sagittis.</p>
-						</div>
-						<div class="span7 offset1">
-							<div class="atk-row">
-								<div class="span6">
-									<h2>Consulting</h2>
-									<ul>
-										<li>Curabitur lobortis sapien iaculis.</li>
-										<li>Nunc a eros ut arcu viverra non justo.</li>
-										<li>Integer a purus et nibh.</li>
-										<li>Duis sit amet nulla.</li>
-										<li>Donec quis risus sit.</li>
-									</ul>
-								</div>
-								<div class="span6">
-									<h2>Training</h2>
-									<ul>
-										<li>Curabitur lobortis sapien iaculis.</li>
-										<li>Nunc a eros ut arcu viverra non justo.</li>
-										<li>Integer a purus et nibh.</li>
-										<li>Duis sit amet nulla.</li>
-										<li>Donec quis risus sit.</li>
-									</ul>
-								</div>
-							</div>
-							<div class="atk-row">
-								<div class="span6">
-									<h2>Design</h2>
-									<ul>
-										<li>Curabitur lobortis sapien iaculis.</li>
-										<li>Nunc a eros ut arcu viverra non justo.</li>
-										<li>Integer a purus et nibh.</li>
-										<li>Duis sit amet nulla.</li>
-										<li>Donec quis risus sit.</li>
-									</ul>
-								</div>
-								<div class="span6">
-									<h2>Development</h2>
-									<ul>
-										<li>Curabitur lobortis sapien iaculis.</li>
-										<li>Nunc a eros ut arcu viverra non justo.</li>
-										<li>Integer a purus et nibh.</li>
-										<li>Duis sit amet nulla.</li>
-										<li>Donec quis risus sit.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>			
-			</div>
 			<div id="portfolio" class="section">
 				<div class="atk-wrapper">
 				
-					<h1>Check <strong>our latest works</strong> out.</h1>
-					<p class="punchline">Curabitur lobortis sapien iaculis. Nunc a eros ut arcu viverra non justo.</p>
-					<div class="hero">
+					<h1>Portfolio</h1>
+<!-- 					<p class="punchline">Curabitur lobortis sapien iaculis. Nunc a eros ut arcu viverra non justo.</p> -->
+					
+					
+					<div class="hero atk-block">
+						<div class="slides">
+							<div class="slide">
+								<div class="atk-row">
+									<div class="span8">
+										<a href="<?template?>content/project-igame-full.jpg<?/?>" rel="lightbox" class="mask"><span class="bg-zoom"></span><img src="<?template?>content/project-igame.jpg<?/?>" /></a>
+									</div>
+									<div class="span4">
+										<div class="description">
+											<h3>Investment Game<br /><em class="small">Project Category</em></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+										</div>
+										<div class="testimonial text-gray">
+											<span class="quote">&#8220;</span>
+											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="atk-row">
+									<div class="span8">
+										<a href="<?template?>content/project-elexu-full.jpg<?/?>" rel="lightbox" class="mask"><span class="bg-zoom"></span><img src="<?template?>content/project-elexu.jpg<?/?>" /></a>
+									</div>
+									<div class="span4">
+										<div class="description">
+											<h3>elexu<br /><em class="small">Project Category</em></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+										</div>
+										<div class="testimonial text-gray">
+											<span class="quote">&#8220;</span>
+											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="atk-row">
+									<div class="span8">
+										<a href="<?template?>content/project-smbo-full.jpg<?/?>" rel="lightbox" class="mask"><span class="bg-zoom"></span><img src="<?template?>content/project-smbo.jpg<?/?>" /></a>
+									</div>
+									<div class="span4">
+										<div class="description">
+											<h3>SortMyBooks<br /><em class="small">Project Category</em></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+										</div>
+										<div class="testimonial text-gray">
+											<span class="quote">&#8220;</span>
+											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="hero-navigation"></ul>
+						<a href="#" class="hero-next"></a>
+					</div>
+					<div class="logos atk-row">
+						<div class="span2">Logo</div>
+						<div class="span2">Logo</div>
+						<div class="span2">Logo</div>
+						<div class="span2">Logo</div>
+						<div class="span2">Logo</div>
+						<div class="span2">Logo</div>
+					</div>
+					
+					
+					<div class="hero" style="display:none">
 						<div class="wrapper">
 							<?Slides2?>
 							<div id="<?$_name?>">
 								<div class="project-description">
-									<h2><?label?>SortMyBooksOnline<?/label?></h2>
+<!-- 									<h2><?label?>SortMyBooksOnline<?/label?></h2> -->
+									<h3>SortMyBooks<br /><em class="small">Online Accounting Software</em></h3>
 									<p><?short_description?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<?/?></p>
 									<!--<div class="icon-32-wdesc"><img src="/templates/jui/images/icon-casestudy.png" alt="" /> <a href="/project/<?$url?>/">Explore this Case Study</a><br/><span class="comment">Extra info and screenshots.</span></div>-->
+									<div class="testimonial text-gray">
+										<span class="quote">&#8220;</span>
+										<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
+									</div>
 								</div>
 								<div class="project">
 									<a id="<?$_name?>_thumb" href="/project/<?$url?>/"><i><img src="/templates/jui/images/explore-casestudy.png" alt="" width="191" height="73" /></i><b></b></a>
@@ -245,28 +352,30 @@
 			</div>
 			<div id="contact" class="section">
 				<div class="atk-wrapper">
-					
+					<h1>Contact</h1>
 					<div class="atk-row">
 						<div class="span8">
-							<h1>Don't be shy, say <strong>hello</strong>!</h1>
-							<p>Aenean adipiscing porttitor est, et sollicitudin turpis auctor nec. Nunc eleifend, libero sit amet semper malesuada, metus mauris blandit urna, ut aliquam ante turpis viverra ipsum.</p>
+							<div class="box outline">
+							<p>For enquiries about our services or to arrange a consultation or obtain a quote please contact us via our comment form.</p>
 							<?$Contact?>
+							</div>
 						</div>
-						<div class="span3 offset1">
-					        <div class="icon-32-wdesc" id="address"><a href="http://maps.google.co.uk/maps?q=52A+Berwick+Street,+London&hl=en&sll=51.523455,-0.013775&sspn=0.009172,0.021415&oq=52a+Berwick+St&t=h&hnear=52A+Berwick+St,+London+W1F+8SL,+United+Kingdom&z=16" alt="map"><img src="<?template?>images/icon-map.png<?/?>" alt="" height="32" width="32" />Agile Technologies Ltd</a>.<br/>52a Berwick St<br>London W1F 8SL<br/>United Kingdom</div>
+						<div class="span4">
+							<h3 class="w-img"><img src="<?template?>images/icon-pin.png<?/?>" />Our Offices</h3><!-- <?template?>images/icon-map.png<?/?> -->
+					        <p class="small">Elexu Technologies Ltd</a>.<br/>52a Berwick St<br>London W1F 8SL<br/>United Kingdom</p>
+							<div class="atk-block small">
+							<iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=52A+Berwick+Street,+London+W1F+8SL,+United+Kingdom&amp;aq=0&amp;oq=52a+Berwick+St+London+W1F+8SL&amp;sll=51.515546,-0.13624&amp;sspn=0.007651,0.011362&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=52A+Berwick+St,+London+W1F+8SL,+United+Kingdom&amp;z=14&amp;ll=51.515546,-0.13624&amp;output=embed"></iframe>
+							</div>
 							<div class="hr hr-small"></div>
-							<div class="icon-32-wdesc" id="address"><img src="<?template?>images/icon-map.png<?/?>" alt="" height="32" width="32" />Agile Technologies Ltd.<br/>1st Floor, 61 Saint Assams Park<br/>Raheny<br/>Dublin 5, Ireland</div>
-							<div class="hr hr-small"></div>
-							<?editable?>
-							<h4>Call us</h4>
-							+353 (0) 1 443 3256
+							<h3 class="w-img"><img src="<?template?>images/icon-phone.png<?/?>" /><em>Call us at</em> +44 0123123</h3>
 <!--
 							<h4>or send us an e-mail</h4>
 							<a href="mailto:info@agiletech.ie">info@agiletech.ie</a>
 -->
-							<?/?>
+<!--
 							<div class="hr hr-small"></div>
-							<div class="icon-32-wdesc"><img src="<?template?>images/icon-nda.png<?/?>" alt="" height="32" width="32" /><a href="/files/Agile_NDA.pdf">NDA Download</a><br/><span class="comment">Non-disclosure agreement</span></div>
+							<div class="icon-32-wdesc"><img src="<?template?>images/icon-nda.png<?/?>" alt="" height="32" width="32" /><a href="/files/Elexu_NDA.pdf">Sample NDA Download</a><br/><span class="text-gray small">Non-disclosure agreement</span></div>
+-->
 						</div>
 					</div>
 				</div>
@@ -274,7 +383,11 @@
 			<div id="footer" class="section">
 				<div class="atk-wrapper">
 					<a href="#" class="top"></a>
-					<h1>Footer</h1>
+					<div class="atk-row">
+						<div class="span4">Copyright © 2012</div>
+						<div class="span4"></div>
+						<div class="span4"></div>
+					</div>
 				</div>
 			</div>
 		</div>
