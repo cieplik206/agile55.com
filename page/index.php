@@ -33,6 +33,18 @@ array ( 5 => array ( 'name' => 'Gita Malinovska', 'title' => 'CEO', 'email' => '
 		$f->addField('checkbox', 'nda', 'Request Elexu Technologies to send signed NDA')->setNotNull();
 		$f->addField('text', 'message', 'Message');
         $f->addSubmit('Send');
+
+        if($f->isSubmitted()){
+        	$m=$this->add('TMail');
+            $m->setTemplate('contact');
+            //$m->addTransport('SES');
+            $m->set($f->get());
+            $m->set('subject','Contact Request from'.$f->get('name'));
+            $x=$m->send('info@elexu.com');
+            $this->js()->univ()->successMessage('Your message was delivered')->execute();
+
+
+        }
 		
 	}
 	function defaultTemplate(){
