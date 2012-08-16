@@ -4,7 +4,6 @@
 
 <p>
 From: <?$name?> (<?$email?>)<br/>
-Contact: <?$contact_phone?></p>
-NDA: <?$nda?>
+Contact: <?$phone?></p>
 
-<p><?$text?></p>
+<p><?$message?></p>
