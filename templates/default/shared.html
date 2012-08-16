@@ -40,7 +40,7 @@
 			    });
 			
 			    function pagerFactory(idx, slide) {
-			        var s = idx > 2 ? ' style="display:none"' : '';
+			        var s = idx > 10 ? ' style="display:none"' : '';
 			        return '<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
 			    };
                 
@@ -72,7 +72,7 @@
 <!-- 					<h1>Elexu Technologies is a web and mobile software company.</h1> -->
 					<div class="atk-row">
 						<div class="span6">
-							<h1>We are an IPTV, web and mobile software company.</h1>
+							<h1>We are an <strong>IPTV</strong>, <br /><strong>web</strong> and <strong>mobile</strong> software company.</h1>
 <!-- 							<h1>Elexu Technologies is <br />a <strong>web</strong> and <strong>mobile<br /> software</strong> company.</h1> -->
 							<p>Elexu Technologies is a creative software development and consultancy company based in the heart of Soho, London and is a wholly-owned subsidiary within the Elexu Portfolio group of companies. Our specialisation is in interactive Mobile-to-TV applications, from interactive games through to internet TV formats which engage their audiences via real-time interactions to produce a more realistic, responsive and entertaining means of communication between content producers and content viewers.</p>
 <!-- 							<p>We also have the capabilities to design and develop mobile applications and websites outside of the Mobile-to-TV and media-entertainment arena.  For customers who want a sophisticated but cost-effective website, mobile app or any other bespoke software programme, we can deliver on time and on budget.</p> -->
@@ -155,17 +155,12 @@
 
 						</div>
 						<div class="span4">
-									<img src="<?template?>temp/trash.png<?/?>" class="trash" />
-
-
+									<h3 class="w-img"><img src="<?template?>images/icon-beaker.png<?/?>" />Web Design</h3>
+									<p>A creative team of designers add the polish and chrome to our structured code to present the most up-to-date and cutting edge look and feel to whatever platform, application or programme we construct. Our designers are passionate about their craft and will work closely with you to ensure the design meets your requirements.</p>
 						</div>
 						
 					</div>
 					<div class="atk-row">
-						<div class="span4">
-									<h3 class="w-img"><img src="<?template?>images/icon-beaker.png<?/?>" />Web Design</h3>
-									<p>A creative team of designers add the polish and chrome to our structured code to present the most up-to-date and cutting edge look and feel to whatever platform, application or programme we construct. Our designers are passionate about their craft and will work closely with you to ensure the design meets your requirements.</p>
-						</div>
 						<div class="span4">
 							<h3 class="w-img"><img src="<?template?>images/icon-sign.png<?/?>" />Consultancy</h3>
 							<p>Many corporations and content providers have ambitious projects which require a high degree of expert advice and specification. One of our key assets for these clients is our consultancy service for maintaining and optimizing network, security, server and storage infrastructures.</p>
@@ -174,6 +169,7 @@
 							<h3 class="w-img"><img src="<?template?>images/icon-tower.png<?/?>" />Support</h3>
 							<p>Our support services are tailored to each client's needs. It is in our best interests to ensure your software’s performance is maintained but is also supported 24/7 by experts on hand, and not outsourced. By providing a quality support service we help our business partners maintain high levels of user satisfaction.</p>
 						</div>
+						<div class="span4"><img src="<?template?>content/image-services.png<?/?>" class="image" /></div>
 					</div>
 				</div>			
 			</div>
@@ -186,12 +182,12 @@
 					<h3 class="w-img"><img src="<?template?>images/icon-hat.png<?/?>" />Consultation</h3>
 					<p>Elexu Technologies takes a highly consultative approach to working with clients. This investment in our clients pays huge dividends for all parties involved. Through many years of delivering successful web, mobile and apps development projects, we know this approach consistently produces outstanding results for both our clients and ourselves.</p>
 						</div>
-						<div class="span4">
-					<h3 class="w-img"><img src="<?template?>images/icon-board.png<?/?>" />Project Management</h3>
-					<p>We excel at providing a robust project management process to ensure projects are delivered on time and within budget. In addition to using Agile methodologies to drive the development stream (sprints, scrums and iterative releases), we also employ leading task management and communication software to ensure all resources are coordinated in their activities, deliverables and timelines.</p>
+						<div class="span4">&nbsp;
+																<img src="<?template?>content/image-approach.png<?/?>" class="image" />
 						</div>
 						<div class="span4">
-																<img src="<?template?>templates/default/temp/trash.png<?/?>" class="trash" />
+					<h3 class="w-img"><img src="<?template?>templates/default/images/icon-board.png<?/?>" />Project Management</h3>
+					<p>We excel at providing a robust project management process to ensure projects are delivered on time and within budget. In addition to using Agile methodologies to drive the development stream (sprints, scrums and iterative releases), we also employ leading task management and communication software to ensure all resources are coordinated in their activities, deliverables and timelines.</p>
 						</div>
 					</div>
 					<div class="atk-row">
@@ -200,12 +196,13 @@
 					<p>Clients of Elexu Technologies benefit from having a dedicated relationship manager. We pride ourselves on timely and transparent communication and aim to build enduring partnerships with all our clients as opposed to a transactional based relationships. We fundamentally believe a partnership approach is the foundation of our success.</p>
 						</div>
 						<div class="span4">
+						&nbsp;
+						</div>
+						<div class="span4">
 					<h3 class="w-img"><img src="<?template?>images/icon-pulse.png<?/?>" />Support</h3>
 					<p>Our relationship with clients doesn’t end simply with the delivery of software. We invest in aftercare so our clients can rest assured that their projects are always up and running (99.9% availability). For mission critical applications we can provide our partners with 24/7 expert support or support on a pay per task basis.</p>
 						</div>
-						<div class="span4">
-						
-						</div>
+
 					</div>
 
 
@@ -223,6 +220,19 @@
 							<div class="slide">
 								<div class="atk-row">
 									<div class="span8">
+										<a href="<?template?>content/project-heineken.jpg<?/?>" rel="lightbox" class="mask"><span class="bg-zoom"></span><img src="<?template?>content/project-heineken.png<?/?>" /></a>
+									</div>
+									<div class="span4">
+										<div class="description">
+											<h3>Over 20 Games<br /><em class="small">Developed or Consulted</em></h3>
+											<p>Our team have participated in development of over 20 high-profile games with the total number of around two million players.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="atk-row">
+									<div class="span8">
 										<a href="<?template?>content/project-igame-full.jpg<?/?>" rel="lightbox" class="mask"><span class="bg-zoom"></span><img src="<?template?>content/project-igame.jpg<?/?>" /></a>
 									</div>
 									<div class="span4">
@@ -230,10 +240,12 @@
 											<h3>Over 20 Games<br /><em class="small">Developed or Consulted</em></h3>
 											<p>Our team have participated in development of over 20 high-profile games with the total number of around two million players.</p>
 										</div>
+<!--
 										<div class="testimonial text-gray">
 											<span class="quote">&#8220;</span>
 											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
 										</div>
+-->
 									</div>
 								</div>
 							</div>
@@ -244,13 +256,15 @@
 									</div>
 									<div class="span4">
 										<div class="description">
-											<h3>Over 100 Web Projects<br /><em class="small">Developed or Consulted</em></h3>
-											<p>We have launched or participated in creation of over 100 different web applications in the past 15 years. This totals up to over 100 unique requests every second.</p>
+											<h3>Making the Future</h3>
+											<p>We are excitedly exploring the opportunities of tomorrow making sure that we as well as our clients are ready to take full advantage of the future mainstream trends. Be it the next step in the evolution of mobile devices or the revolutionary IPTV (Internet Protocol Televisiion).</p>
 										</div>
+<!--
 										<div class="testimonial text-gray">
 											<span class="quote">&#8220;</span>
 											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
 										</div>
+-->
 									</div>
 								</div>
 							</div>
@@ -261,14 +275,15 @@
 									</div>
 									<div class="span4">
 										<div class="description">
-											<h3>Over $2000 in daily revenue<br /><em class="small">The Software as a Service we have
-												created earns our clients over a 2000 USD every day.
+											<h3>Over $2000 in daily revenue</h3><p>The Software as a Service we have created earns our clients over a 2000 USD every day.
 											</p>
 										</div>
+<!--
 										<div class="testimonial text-gray">
 											<span class="quote">&#8220;</span>
 											<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	<span class="author small"><strong>John Smith,</strong>Microsoft Inc.</span>
 										</div>
+-->
 									</div>
 								</div>
 							</div>
@@ -277,12 +292,12 @@
 						<a href="#" class="hero-next"></a>
 					</div>
 					<div class="logos atk-row">
-						<div class="span2"><img src="<?template?>images/logos/zy.png<?/?>"/></div>
-						<div class="span2"><img src="<?template?>images/logos/he.png<?/?>"/></div>
 						<div class="span2"><img src="<?template?>images/logos/vm.png<?/?>"/></div>
-						<div class="span2"><img src="<?template?>images/logos/bb.png<?/?>"/></div>
+						<div class="span2"><img src="<?template?>images/logos/zy.png<?/?>"/></div>
 						<div class="span2"><img src="<?template?>images/logos/ps.png<?/?>"/></div>
-						<div class="span2"></div>
+						<div class="span2"><img src="<?template?>images/logos/he.png<?/?>"/></div>
+						<div class="span2"><img src="<?template?>images/logos/bb.png<?/?>"/></div>
+						<div class="span2"><img src="<?template?>images/logos/eircom.png<?/?>"/></div>
 					</div>
 					
 				</div>
@@ -293,18 +308,18 @@
 					<div class="atk-row">
 						<div class="span8">
 							<div class="box outline">
-							<p>For enquiries about our services or to arrange a consultation or obtain a quote please contact us via our comment form.</p>
+							<p class="about">For enquiries about our services or to arrange a consultation or obtain a quote please contact us via our comment form.</p>
 							<?$Contact?>
 							</div>
 						</div>
 						<div class="span4">
 							<h3 class="w-img"><img src="<?template?>images/icon-pin.png<?/?>" />Our Offices</h3><!-- <?template?>images/icon-map.png<?/?> -->
-					        <p class="small">Elexu Technologies Ltd</a>.<br/>52a Berwick St<br>London W1F 8SL<br/>United Kingdom</p>
+					        <p class="address">Elexu Technologies Ltd</a>.<br/>52a Berwick St<br>London W1F 8SL<br/>United Kingdom</p>
 							<div class="atk-block small">
 							<iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=52A+Berwick+Street,+London+W1F+8SL,+United+Kingdom&amp;aq=0&amp;oq=52a+Berwick+St+London+W1F+8SL&amp;sll=51.515546,-0.13624&amp;sspn=0.007651,0.011362&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=52A+Berwick+St,+London+W1F+8SL,+United+Kingdom&amp;z=14&amp;ll=51.515546,-0.13624&amp;output=embed"></iframe>
 							</div>
 							<div class="hr hr-small"></div>
-							<h3 class="w-img"><img src="<?template?>images/icon-phone.png<?/?>" /><em>Call us at</em> +44 7511 283906</h3>
+							<h4 class="w-img"><img src="<?template?>images/icon-phone.png<?/?>" /><em>Call us at</em> +44 7511 283906</h4>
 <!--
 							<h4>or send us an e-mail</h4>
 							<a href="mailto:info@agiletech.ie">info@agiletech.ie</a>
@@ -322,8 +337,7 @@
 					<a href="#" class="top"></a>
 					<div class="atk-row">
 						<div class="span4">Copyright © 2012</div>
-						<div class="span4"></div>
-						<div class="span4"></div>
+						<div class="span8 links"><a href="#">Terms & Conditions</a><span class="atk-sep">|</span><a href="#">Privacy Policy</a></div>
 					</div>
 				</div>
 			</div>
