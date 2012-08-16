@@ -28,19 +28,20 @@ class page_index extends Page {
 	9 => array ( 'name' => 'Janis Volbergs', 'title' => 'Senior Developer', 'email' => '', 'descr' => 'Janis is the development lead and web software architect. He have participated in over a hundred of client projects. Janis knows exactly how to solve any technical problem. He have started his developer carrier in 1997.', 
 		'thumb' => 'jancha', 
 		), 
+	13 => array ( 'name' => 'Serhij', 'title' => 'Scalability Expert', 'email' => '', 'descr' => 'Stas is a system programmer, Linux admin and our scalability specialist. He has 10+ year experience working with Linux companies and he has advised many companies on how to improve the scalability, security and efficiency of their server infrastructure. In addition to his commercial work, Stas is a part-time university professor and lecturer.', 
+		'thumb' => 'stas', 
+		), 
 	6 => array ( 'name' => 'Gita Malinovska', 'title' => 'Q/A', 'email' => '', 
 		'descr' => 'Gita is an experienced business and project manager.  During her extensive career in the software industry, Gita has served in a number senior leadership capacities, including as CEO and PMO lead.  Gita is expert at helping development organizations regain (and retain) focus on delivering commercially-viable products which delight the customer. ',
 		'thumb' => 'gita', 
 		), 
-	13 => array ( 'name' => 'Serhij', 'title' => 'root', 'email' => '', 'descr' => 'Stas is a system programmer, Linux admin and our scalability specialist. He has 10+ year experience working with Linux companies and he has advised many companies on how to improve the scalability, security and efficiency of their server infrastructure. In addition to his commercial work, Stas is a part-time university professor and lecturer.', 
-		'thumb' => 'stas', 
-		), 
-	14 => array ( 'name' => 'Sam', 'title' => 'Developer', 'email' => '', 'descr' => 'Maxim has over 10 years experience in the web development field. He is an active participant in the Russian PHP-community. He knows all about different frameworks such as CakePHP and CodeIgniter.', 
+	14 => array ( 'name' => 'Sam', 'title' => 'developer', 'email' => '', 'descr' => 'Sam has over 10 years experience in the web development field. He is an active participant in the Open-Source community.', 
 		'thumb' => 'sam', 
 		), 
-	15 => array ( 'name' => 'Vadym', 'title' => 'Framework Developer', 'email' => '', 'descr' => 'Vadim discovered Agile Toolkit after 6+ years experience developing in Ruby on Rails and Symfony. He quickly realised the potential behind Agile Toolkit and was very eager to join our core team at Agile Technologies. Vadim works on client projects, including Elexuâ�¢ and Plugin Manager.', 
-		'thumb' => '', 
-		), )
+	15 => array ( 'name' => 'Yanet', 'title' => 'Accounting & HR', 'email' => '', 'descr' => '',
+		'thumb' => 'yanet', 
+		), 
+	)
 );
 
 
