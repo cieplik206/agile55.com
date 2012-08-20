@@ -11,7 +11,7 @@ class page_index extends Page {
             $this->api->add('AgileTeam',null,'Team','Team')
 ->setSource(array ( 
 	4 => array ( 'name' => 'Romans', 'title' => 'CTO', 'email' => '', 
-		'descr' => 'Romans is a recognised thought leader and an innovator in Open Source and Data Scalability, having founded a number of successful software development companies in the past as well as being the inventor of the Agile Toolkit. Additionally, Romans is a skilled manager with a great eye for technical talent with panache for managing large and complex projects, often under great pressure and tight timelines. His expertise in managing international teams, delivering complex data system requirements and his leadership in previous disaster recovery projects on behalf of well known global brands provides both Elexu and our business partners a great degree of assurance that projects will be delivered on time and on budget.',
+		'descr' => 'Romans is a recognised thought leader and an innovator in Open Source and Data Scalability, having founded a number of successful software development companies in the past as well as being the inventor of the Agile Toolkit. Romans is a skilled manager with a great eye for technical talent with panache for managing large and complex projects, often under great pressure and tight timelines.', 
 		'thumb' => 'romans',
 		), 
 	5 => array ( 'name' => 'David', 'title' => 'CEO', 'email' => '', 
