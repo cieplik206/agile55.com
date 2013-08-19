@@ -1,4 +1,4 @@
-<?
+<?php
 class page_company extends AWPage {
 	function init(){
 		parent::init();

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
    Nifty little page. Helps to convert time from Agile Time to other timezones
    */

@@ -1,4 +1,4 @@
-<?
+<?php
 class page_newsletter extends AWPage {
 	function init(){
 		parent::init();

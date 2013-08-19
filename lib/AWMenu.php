@@ -1,4 +1,4 @@
-<?
+<?php
 class AWMenu extends View {
 	public $active,$inactive;
 	

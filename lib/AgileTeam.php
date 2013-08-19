@@ -1,4 +1,4 @@
-<?
+<?php
 class AgileTeam extends View {
 	/*
 	   This class implements multiple slides and ajax buttons for next/prev

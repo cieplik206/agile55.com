@@ -1,4 +1,4 @@
-<?
+<?php
 class page_pwcheck extends AWPage {
 	function init(){
 		parent::init();

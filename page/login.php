@@ -1,4 +1,4 @@
-<?
+<?php
 class page_login extends AWPage {
 	function init(){
 		parent::init();

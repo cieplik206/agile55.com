@@ -1,4 +1,4 @@
-<?
+<?php
 class page_subscribe extends AWPage {
 	function init(){
 		parent::init();

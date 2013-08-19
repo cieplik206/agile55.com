@@ -1,4 +1,4 @@
-<?
+<?php
 class page_useskype extends AWPage {
 	function init(){
 		parent::init();

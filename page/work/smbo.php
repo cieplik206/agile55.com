@@ -1,4 +1,4 @@
-<?
+<?php
 class page_work_smbo extends AWPage {
 	function init(){
 		parent::init();

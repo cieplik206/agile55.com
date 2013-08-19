@@ -1,4 +1,4 @@
-<?
+<?php
 class Frontend extends ApiFrontend {
 
 	public $html_title = false;

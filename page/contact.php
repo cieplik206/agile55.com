@@ -1,4 +1,4 @@
-<?
+<?php
 class page_contact extends AWPage {
 	function init(){
 		parent::init();

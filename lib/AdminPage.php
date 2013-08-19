@@ -1,4 +1,4 @@
-<?
+<?php
 class AdminPage extends AWPage {
 	function isAllowed(){
 		if(!$this->api->auth->isLoggedIn()){
