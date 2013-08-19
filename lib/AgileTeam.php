@@ -16,8 +16,9 @@ class AgileTeam extends View {
 			*/
 
 		$this->js('click',
-				$this->js()->atk4_loader(array('cut_object'=>$this->name))->atk4_loader('loadURL',$this->js()->_selectorThis()->attr('href'))
-				)->_selector('.thumb-grid a');
+            //$this->js()->atk4_loader(array('cut_object'=>$this->name))->atk4_loader('loadURL',$this->api->url(null,array('Agiletech_agileteam'=>6,'cut_object'=>'Agiletech_agileteam')))
+			$this->js()->atk4_loader(array('cut_object'=>$this->name))->atk4_loader('loadURL',$this->js()->_selectorThis()->attr('href'))
+			)->_selector('.thumb-grid a');
 
 		if(isset($_GET[$this->name])){
 			$this->js(true)->_selector('#'.$this->name.'_thumb')->find('img')->hide()->fadeIn('slow');
@@ -68,7 +69,7 @@ class AgileTeam extends View {
 				}
 			}
 			if($_GET[$this->name]!=$k)$el->template->del('selected');
-			$el->template->set('href',$this->api->getDestinationURL(null,array($this->name=>$k)));
+			$el->template->set('href',$this->api->url(null,array($this->name=>$k,'cut_object'=>$this->name)));
 
 
 
