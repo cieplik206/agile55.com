@@ -1,6 +1,6 @@
-<?subject?>Contact form elexu.com<?/?>
+<?subject?>Contact form agile55.com<?/?>
 
-<h2>Contact Form on ElexuTech.com</h2>
+<h2>Contact Form on Agile55.com</h2>
 
 <p>
 From: <?$name?> (<?$email?>)<br/>

@@ -55,7 +55,6 @@ class Page_index extends Page {
         $f->addField('line', 'name', 'Company')->setMandatory('required');
         $f->addField('line', 'email', 'E-mail')->setMandatory('required');
         $f->addField('line', 'phone', 'Phone')->setMandatory('required');
-        //$f->addField('checkbox', 'nda', 'Request Elexu Technologies to send signed NDA')->setNotNull();
         $f->addField('text', 'message', 'Message');
         $f->addSubmit('Send');
 
