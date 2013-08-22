@@ -4,13 +4,25 @@ class page_contact extends Page {
         parent::init();
 
         $f=$this->add('Form',null,'Contact');
-        $f->addField('line', 'name', 'Company')->setMandatory('required');
-        $f->addField('line', 'email', 'E-mail')->setMandatory('required');
-        $f->addField('line', 'phone', 'Phone')->setMandatory('required');
+        $f->addField('line', 'name', 'Company');
+        $f->addField('line', 'email', 'E-mail');
+        $f->addField('line', 'phone', 'Phone');
         $f->addField('text', 'message', 'Message');
         $f->addSubmit('Send');
 
         if($f->isSubmitted()){
+            if ($f->get('name')==""){
+                $f->js()->atk4_form('fieldError', 'name', "Cannot be empty!")->execute();
+            }
+            if ($f->get('email')==""){
+                $f->js()->atk4_form('fieldError', 'email', "Cannot be empty!")->execute();
+            }
+            if(!filter_var($f->get('email'),FILTER_VALIDATE_EMAIL)){
+                $f->js()->atk4_form('fieldError', 'email', "Wrong email format!")->execute();
+            }
+            if ($f->get('message')==""){
+                $f->js()->atk4_form('fieldError', 'message', "Cannot be empty!")->execute();
+            }
             $m=$this->add('TMail');
             $m->setTemplate('contact');
             $m->set($f->get());
