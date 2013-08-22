@@ -1,0 +1,9 @@
+<?subject?>Contact form agile55.com<?/?>
+
+<h2>Contact Form on Agile55.com</h2>
+
+<p>
+From: <?$name?> (<?$email?>)<br/>
+Contact: <?$phone?></p>
+
+<p><?$message?></p>
