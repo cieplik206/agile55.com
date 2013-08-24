@@ -1,5 +1,5 @@
 <?php
-class page_index extends Page {
+class page_team extends Page {
     function init(){
         parent::init();
 
@@ -42,6 +42,6 @@ class page_index extends Page {
     }
 
     function defaultTemplate(){
-        return array('page/index','_top');
+        return array('page/team','_top');
     }
 }

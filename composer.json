@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "psr-0": {"": "lib/"}
+    },
+    "require": {
+        "atk4/atk4": "dev-master",
+        "agile55/ga": "dev-master"
+    }
+}
