@@ -36,12 +36,12 @@ class AgileTeam extends View {
 		}
 
 		try{
-			$this->template->set('thumb',$this->api->locateURL('template','temp/team-'.$d['thumb'].'-on.jpg'));
+			$this->template->set('thumb',$this->api->locateURL('public','temp/team-'.$d['thumb'].'-on.jpg'));
 		}catch (PathFinder_Exception $e){
 			try{
-				$this->template->set('thumb',$this->api->locateURL('template','temp/team-'.$d['thumb'].'-on.png'));
+				$this->template->set('thumb',$this->api->locateURL('public','temp/team-'.$d['thumb'].'-on.png'));
 			}catch (PathFinder_Exception $e){
-				$this->template->set('thumb',$this->api->locateURL('template','temp/team-collibri-on.png'));
+				$this->template->set('thumb',$this->api->locateURL('public','temp/team-collibri-on.png'));
 			}
 
 		}
@@ -60,12 +60,12 @@ class AgileTeam extends View {
 			$el=$this->add('View',$k,'bullet',array('page/company','bullet'))
 				;
 			try{
-				$el->template->set('thumb',$this->api->locateURL('template','temp/team-'.$d['thumb'].($_GET[$this->name]==$k?'-on':'-off').'.jpg'));
+				$el->template->set('thumb',$this->api->locateURL('public','temp/team-'.$d['thumb'].($_GET[$this->name]==$k?'-on':'-off').'.jpg'));
 			}catch (PathFinder_Exception $e){
 				try{
-					$el->template->set('thumb',$this->api->locateURL('template','temp/team-'.$d['thumb'].($_GET[$this->name]==$k?'-on':'-off').'.png'));
+					$el->template->set('thumb',$this->api->locateURL('public','temp/team-'.$d['thumb'].($_GET[$this->name]==$k?'-on':'-off').'.png'));
 				}catch (PathFinder_Exception $e){
-					$el->template->set('thumb',$this->api->locateURL('template','temp/team-collibri'.($_GET[$this->name]==$k?'-on':'-off').'.png'));
+					$el->template->set('thumb',$this->api->locateURL('public','temp/team-collibri'.($_GET[$this->name]==$k?'-on':'-off').'.png'));
 				}
 			}
 			if($_GET[$this->name]!=$k)$el->template->del('selected');

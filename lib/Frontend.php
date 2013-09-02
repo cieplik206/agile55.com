@@ -6,17 +6,17 @@ class Frontend extends ApiFrontend {
         /* ************************
          *   PATHFINDER
          */
+        /*
         $this->pathfinder->addLocation('./',array(
             'addons'=>array('../atk4-addons','../addons'),
             'php'=>array('../shared'),
-            'css'=>array(
-                '../addons/cms/templates/default/css',
             ),
 //            'js'=>array(
 //                '../addons/cms/templates/js',
 //            ),
             //'template'=>'atk4-addons/misc/templates',
         ));
+         */
         
         $this->add('jUI');
 
@@ -26,9 +26,9 @@ class Frontend extends ApiFrontend {
 
     function initLayout(){
         $m = $this->add('Menu', 'Menu', 'Menu');
-        $m->addMenuItem('index','People');
+        $m->addMenuItem('index','Home');
         $m->addMenuItem('services','Services');
-        $m->addMenuItem('approach','Approach');
+        $m->addMenuItem('team','Team');
         $m->addMenuItem('portfolio','Portfolio');
         $m->addMenuItem('contact','Contact');
 
