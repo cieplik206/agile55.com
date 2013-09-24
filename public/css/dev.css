@@ -9,6 +9,7 @@ body{color:#326162;font-size:16px;}
 }
 .left {float:left;}
 .right {float:right;}
+.cc {clear:both;height:0;width:0;}
 
 h1 {font-size: 48px;font-weight: normal;line-height: 1.1;margin-bottom: 0.7em;}
 p, blockquote {font-size: 16px;line-height: 24px;}
@@ -101,4 +102,27 @@ h3.w-img img, h4.w-img img {position: absolute;left: -16px;top: -8px;}
     padding: 1em;
     margin-bottom: 2em;
     display: inline-block;
+}
+
+#portfolio h1 {
+    float:left;
+}
+.tags {
+    float:right;
+    margin:0 20px 20px 0;
+    text-align: left;
+    width:235px;
+}
+.tags h5 {
+    margin-bottom:0;
+}
+.tags ul {
+    margin-left:0;
+    list-style-type:none;
+}
+.tags ul li {
+    float:left;
+    margin:0 10px 0 0;
+    padding:0;
+    background:none;
 }
