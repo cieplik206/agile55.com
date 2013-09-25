@@ -10,6 +10,7 @@ class page_portfolio extends Page {
         $projects_lister=$this->add('Lister_Projects',null,'projects');
         $projects_lister->setSource($this->getProjects());
 
+        return;
         $projects_lister->js(true)->isotope(array(
             'itemSelector' => '.isotope-item',
             'animationOptions'=> array(
