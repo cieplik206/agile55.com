@@ -1,11 +1,19 @@
 <?Menu?>
-<div id="<?$_name?>" class="atk-menu atk-menu-horizontal">
-<ul>
-    <?rows?>
-        <?row?>
-        <li id="<?$id?>" class="<?$class?>"><a href="<?$href?>"><?label?>MenuItem<?/?></a></li>
-        <?/row?>
-    <?/?>
+<div id="<?$_name?>" class="atk-menu-bar atk-cells atk-swatch-1">
+    <div class="atk-cell atk-valign-middle">
+        <a href="<?page?>/<?/?>" class="atk-logo atk-size-giga"><img
+            src="<?public?>images/logo.png<?/?>"/>
+        </a>
+    </div>
+    <div class="atk-cell atk-jackscrew">
+        <ul class="atk-menu atk-menu-horizontal">
+            <?rows?>
+                <?row?>
+                <li id="<?$id?>" class="<?$class?>"><a href="<?$href?>"><?label?>MenuItem<?/?></a></li>
+                <?/row?>
+            <?/?>
+        </ul>
+    </div>
     <?$Content?>
 </ul>
 </div>
