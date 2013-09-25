@@ -1,6 +1,19 @@
 <<?element?>div<?/?> class="atk-lister <?$class?>" id="<?$_name?>">
 <?rows?><?row?>
-    <a class="isotope-item izotag_all <?$tags?>" href="<?page?><?$link?><?/?>"><i><b></b><img src="<?template?><?$image?><?/?>"></i><span><?$name?></span></a>
+
+<div class="atk-media-block span_4 atk-box atk-color-green isotope-item izotag_all <?$tags?>" >
+    <div class="atk-media">
+        <img src="<?template?><?$image?><?/?>">
+    </div>
+    <div class="atk-content atk-jackscrew">
+        <h4><?$name?></a></h4>
+        <p>Donec dolor sapien, sollicitudin in erat ac, pellentesque venenatis orci.</p>
+        <hr class="small">
+        <a href="<?page?><?$link?><?/?>"><span class="icon-down-circled-1"></span>More Info</a>
+    </div>
+</div>
+
+<i><b></b></i><span><?$name?></span></a>
 <?/row?><?/rows?>
 <?$Content?>
 </<?element?>div<?/?>>
