@@ -20,14 +20,15 @@ class page_portfolio extends Page {
         ));
 
         // $('#container').isotope({ filter: '.metal' });
-
-        $but_set = $this->add('ButtonSet',array(/*'vertical'=>true*/),'tags_buttons');
+/*
+        $but_set = $this->add('ButtonSet',array(),'tags_buttons');
         foreach ($this->getTags() as $tag) {
             $but_set->addButton($tag)->js('click',
                 $projects_lister->js()->isotope(array(
                     'filter' => '.izotag_'.$tag,
                 )));
         }
+        */
     }
 
     function getTags(){

@@ -3,9 +3,11 @@
 -------------------------------------------------------------------- */
 body{color:#326162;font-size:16px;}
 .atk-wrapper {
-    width: 960px;
+    min-width: 980px;
+    width: 980px;
     padding-left: 0;
     padding-right: 0;
+    overflow:hidden;
 }
 .left {float:left;}
 .right {float:right;}
@@ -108,8 +110,9 @@ h3.w-img img, h4.w-img img {position: absolute;left: -16px;top: -8px;}
     float:left;
 }
 .tags {
-    float:right;
-    margin:0 20px 20px 0;
+    position:absolute;
+    top:250px;
+    left:1260px;
     text-align: left;
     width:235px;
 }
@@ -121,7 +124,7 @@ h3.w-img img, h4.w-img img {position: absolute;left: -16px;top: -8px;}
     list-style-type:none;
 }
 .tags ul li {
-    float:left;
+    /*float:left;*/
     margin:0 10px 0 0;
     padding:0;
     background:none;
