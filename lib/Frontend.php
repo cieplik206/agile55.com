@@ -35,7 +35,7 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('portfolio','Portfolio');
         $m->addMenuItem('contact','Contact');
 
-        $l->addFooter('Text')->setHTML('&copy; 2003-2013 Agile55');
+        $l->addFooter()->setHTML('&copy; 2003-2013 Agile55');
 
         parent::initLayout();
     }
