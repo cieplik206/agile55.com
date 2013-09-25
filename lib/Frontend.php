@@ -28,7 +28,7 @@ class Frontend extends ApiFrontend {
 
         $l = $this->add('Layout_Fluid');
 
-        $m = $l->addMenu('Menu');
+        $m = $l->addMenu('MainMenu');
         $m->addMenuItem('index','Home');
         $m->addMenuItem('services','Services');
         $m->addMenuItem('team','Team');
