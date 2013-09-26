@@ -10,7 +10,6 @@ class page_portfolio extends Page {
         $projects_lister=$this->add('Lister_Projects',null,'projects');
         $projects_lister->setSource($this->getProjects());
 
-        return;
         $projects_lister->js(true)->isotope(array(
             'itemSelector' => '.isotope-item',
             'animationOptions'=> array(
@@ -172,12 +171,14 @@ class page_portfolio extends Page {
             'link'=>'portfolio/whitepier',
             'image'=>'images/portfolio/whitepier.png',
             'tags'=>array('development','design','discontinued'),
+            'descr'=>'A startup company who were looking to develop a complex on-line RFQ submission, quotation and the rest of the project delivery in a highly controlled high-budget projects'
         ),
         array(
             'name'=>'yapzar',
             'link'=>'portfolio/yapzar',
             'image'=>'images/portfolio/yapzar.png',
             'tags'=>array(),
+            'descr'=>'Description not provided',
         ),
         array(
             'name'=>'SecureHost',

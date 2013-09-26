@@ -1,15 +1,23 @@
 <<?element?>div<?/?> class="atk-lister <?$class?>" id="<?$_name?>">
 <?rows?><?row?>
 
-<div class="atk-media-block span_4 atk-box atk-swatch-2 isotope-item izotag_all <?$tags?>" >
-    <div class="atk-media">
-        <img src="<?template?><?$image?><?/?>">
-    </div>
+<div style="margin: 5px; width: 300px" class="atk-box example isotope-item izotag_all <?$tags?>" >
     <div class="atk-content atk-jackscrew">
-        <h4><?$name?></a></h4>
-        <p>Donec dolor sapien, sollicitudin in erat ac, pellentesque venenatis orci.</p>
-        <hr class="small">
-        <a href="<?page?><?$link?><?/?>"><span class="icon-down-circled-1"></span>More Info</a>
+
+
+        <h3><?$name?></a></h3>
+
+    <a class="atk-label atk-effect-info" href="/agile55/public/portfolio?tag=hosting">hosting</a>
+    <a class="atk-label atk-effect-info" href="/agile55/public/portfolio?tag=hosting">hosting</a>
+
+    <div class="atk-move-center atk-shape-rounded" style="padding: 5px">
+        <img src="<?template?><?$image?><?/?>" width="226" height="156" >
+    </div>
+
+        <p><?descr?>Donec dolor sapien, sollicitudin in erat ac,
+    pellentesque venenatis orci.<?/?></p>
+
+        <a  href="<?page?><?$link?><?/?>"><span class="icon-down-circled-1"></span>More Info</a>
     </div>
 </div>
 
