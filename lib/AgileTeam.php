@@ -57,7 +57,7 @@ class AgileTeam extends View {
 			// add bullet
 			if(!$this->first_id)$this->first_id=$k;
 			if(!isset($_GET[$this->name]))$_GET[$this->name]=$this->first_id;
-			$el=$this->add('View',$k,'bullet',array('page/company','bullet'))
+			$el=$this->add('View',$k,'bullet',array('page/team','bullet'))
 				;
 			try{
 				$el->template->set('thumb',$this->api->locateURL('public','temp/team-'.$d['thumb'].($_GET[$this->name]==$k?'-on':'-off').'.jpg'));
