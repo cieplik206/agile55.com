@@ -30,6 +30,10 @@ class page_contact extends Page {
             $x=$m->send('info@agiletech.ie');
             $this->js()->univ()->alert('Your message was delivered')->execute();
         }
+
+
+        $this->js(true)->_selector('#accordion')->accordion(array('collapsible'=>true,'active'=>false));
+
     }
     function defaultTemplate(){
         return array('page/contact','_top');
