@@ -103,7 +103,7 @@ class page_portfolio extends Page {
             'name'=>'Elexu.com',
             'link'=>'portfolio/elexu',
             'image'=>'images/portfolio/elexu-profile.png',
-            'tags'=>array('training','developent','design'),
+            'tags'=>array('training','development','design'),
             'descr'=>'Elexu is an startup working to build a new generation of interractive social television. Our team have developed the initial prototypes and helped to hire and train in-house developers.'
         ),
         array(
@@ -140,14 +140,14 @@ class page_portfolio extends Page {
             'name'=>'Gradpool',
             'link'=>'portfolio/gradpool',
             'image'=>'images/portfolio/gradpool.jpg',
-            'tags'=>array('startup','development','design','hosting'),
+            'tags'=>array('development','design','hosting'),
             'descr'=>'Gradpool is a start-up aiming at helping out graduate students to find an appropriate internship program. We have helped to develop the initial prototype of the application and then refactor it entirely. Only the flexibility of Agile Toolkit would have alowed us to adopt quicky to the changing business requirements'
         ),
         array(
             'name'=>'3rd Chamber',
             'link'=>'portfolio/3rdchamber',
             'image'=>'images/portfolio/3rd_chamber.png',
-            'tags'=>array('startup','development','design','hosting'),
+            'tags'=>array('development','design','hosting'),
             'descr'=>'An interesting idea on how to improve poitical structure in UK sparked this curious project. Agile Toolkit allowed us to build an initial prototype very quickly and later add design on top of existing business logic.',
         ),
         array(
@@ -163,14 +163,14 @@ class page_portfolio extends Page {
             'name'=>'zoubizous',
             'link'=>'portfolio/zoubizous',
             'image'=>'images/portfolio/zoubizous-profile.png',
-            'tags'=>array('development','design','discontinued'),
+            'tags'=>array('development','design'),
             'descr'=>'We have started to develop this project as a joint venture with a private investor, but had to stop after the initial build due to funding problems. We agreed to open-source the project and use it as a tutorial for anyone who wants to earn Agile Toolkit'
         ),
         array(
             'name'=>'whitepier',
             'link'=>'portfolio/whitepier',
             'image'=>'images/portfolio/whitepier.png',
-            'tags'=>array('development','design','discontinued'),
+            'tags'=>array('development','design'),
             'descr'=>'A startup company who were looking to develop a complex on-line RFQ submission, quotation and the rest of the project delivery in a highly controlled high-budget projects'
         ),
         array(
