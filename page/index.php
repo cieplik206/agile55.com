@@ -4,7 +4,7 @@ class page_index extends Page {
         parent::init();
 
         $this->add('Button',null,'Action')
-            ->set('Try our Interractive Spec Builder')
+            ->set('Hire Us')
             ->js('click')->univ()->frameURL();
     }
     function defaultTemplate() {
