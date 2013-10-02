@@ -35,7 +35,9 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('contact','Contact');
 
         $l->addFooter()->setHTML('<div class="atk-cells atk-jackscrew"><div class="atk-cell">'.
-            '&copy; 2003-2013 Agile55</div><div class="atk-cell atk-align-right">Powered by Agile Toolkit 4.3</div></div>');
+            'Powered by Agile Toolkit 4.3</div><div class="atk-cell atk-align-right"><a href="'.
+            $this->api->url('login')
+            .'"><span class="icon-key-1"></span>Client Login</a></div></div>');
 
         parent::initLayout();
     }
