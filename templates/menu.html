@@ -1,21 +1,21 @@
 <?Menu?>
-<div id="<?$_name?>" class="atk-menu-bar atk-cells atk-swatch-5
-    atk-size-mega">
+<div class="atk-menu-bar atk-cells" id="atk-header">
     <div class="atk-cell atk-valign-middle atk-jackscrew">
         <a href="<?page?>/<?/?>" class="atk-logo atk-size-giga"><img
             src="<?public?>images/logo.png<?/?>" height="80"/>
         </a>
     </div>
     <div class="atk-cell">
-        <ul class="atk-menu atk-menu-horizontal">
+        <ul class="atk-menu atk-menu-horizontal atk-size-mega">
+
             <?rows?>
                 <?row?>
                 <li id="<?$id?>" class="<?$class?>"><a href="<?$href?>"><?label?>MenuItem<?/?></a></li>
                 <?/row?>
             <?/?>
+
         </ul>
     </div>
     <?$Content?>
-</ul>
 </div>
 <?/?>
