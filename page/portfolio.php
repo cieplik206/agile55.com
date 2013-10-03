@@ -22,18 +22,20 @@ class page_portfolio extends Page {
         // $('#container').isotope({ filter: '.metal' });
 
         $but_set = $this->add('View',array(),'tags_buttons')->setClass('atk-move-right');
-        foreach ($this->getTags() as $tag) {
-            $but_set->add('View')->setClass('atk-move-left tag_item')->set($tag)->js('click',
+        $tags=$this->getTags();
+        for ($i=0; $i<count($tags); $i++) {
+            $but_set->add('View')->setClass('atk-move-left tag_item')->set($tags[$i])->js('click',
                 $projects_lister->js()->isotope(array(
-                    'filter' => '.izotag_'.$tag,
+                    'filter' => '.izotag_'.$tags[$i],
                 )));
+            if ($i<(count($tags)-1)) $but_set->add('View')->setClass('atk-move-left')->set(', ');
+        }
             /*
             $but_set->addButton($tag)->js('click',
                 $projects_lister->js()->isotope(array(
                     'filter' => '.izotag_'.$tag,
                 )));
             */
-        }
     }
 
     function getTags(){

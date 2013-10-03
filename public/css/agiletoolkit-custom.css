@@ -15,7 +15,7 @@ body.page-team .team-block .atk-media{font-size:0;line-height:0;width:207px}body
 body.page-portfolio .project{width:25%}body.page-portfolio .project .thumbnail{font-size:0;line-height:0;margin-bottom:.809rem}
 
 
-.tag_item {margin:0 4px 0;cursor:pointer;color: #00f;}
+.tag_item {margin:0 0 0 4px;cursor:pointer;color: #00f;}
 .tag_item:hover {color: red;}
-.show_label {float:right;margin:0px 10px 0 0;}
+.show_label {float:right;margin:0px 6px 0 0;}
 
