@@ -1,20 +1,13 @@
 <<?element?>div<?/?> class="atk-lister <?$class?>" id="<?$_name?>">
 <?rows?><?row?>
 
-<div style="margin: 5px; width: 300px" class="atk-box atk-swatch-5 isotope-item izotag_all <?$tags?>" >
-    <div class="atk-content atk-jackscrew">
-
-
-        <h3><a  href="<?page?><?$link?><?/?>"><?$name?></a></h3>
-
-        <?$tag_links?>
-
-    <div class="atk-move-center atk-shape-rounded" style="padding: 5px">
-        <a  href="<?page?><?$link?><?/?>"><img src="<?template?><?$image?><?/?>" width="226" height="156" ></a>
-    </div>
-
-        <p><?descr?>Donec dolor sapien, sollicitudin in erat ac,
-    pellentesque venenatis orci.<?/?></p>
+<div class="isotope-item izotag_all <?$tags?>" >
+	<div class="project atk-box atk-swatch-5">
+	    <h3><a href="<?page?><?$link?><?/?>"><?$name?></a></h3>
+	    <a href="<?page?><?$link?><?/?>" class="thumbnail"><img src="<?template?><?$image?><?/?>" width="100%"/></a>
+	    <p><?descr?>Donec dolor sapien, sollicitudin in erat ac,
+	pellentesque venenatis orci.<?/?></p>
+	    <div class="atk-comment"><?$tag_links?></div>
     </div>
 </div>
 
