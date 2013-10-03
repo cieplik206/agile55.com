@@ -19,7 +19,7 @@ class Lister_Projects extends CompleteLister {
                 $tag_links[]='<a class="label" href="'.$this->api->url(null,array('tag'=>$tag)).'">'.$tag.'</a>';
             }
         }
-        $this->current_row_html['tag_links'] = join(', ',$tag_links);
+        //$this->current_row_html['tag_links'] = join(', ',$tag_links);
     }
     function defaultTemplate(){
         return array('view/lister/project');

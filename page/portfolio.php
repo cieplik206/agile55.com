@@ -4,8 +4,8 @@ class page_portfolio extends Page {
         parent::init();
         $this->js(true)->_load('jquery.isotope.min');
 
-        $tags_lister=$this->add('Lister_Tags',null,'tags');
-        $tags_lister->setSource($this->getTagHashes());
+        //$tags_lister=$this->add('Lister_Tags',null,'tags');
+        //$tags_lister->setSource($this->getTagHashes());
 
         $projects_lister=$this->add('Lister_Projects',null,'projects');
         $projects_lister->setSource($this->getProjects());
@@ -20,15 +20,20 @@ class page_portfolio extends Page {
         ));
 
         // $('#container').isotope({ filter: '.metal' });
-/*
-        $but_set = $this->add('ButtonSet',array(),'tags_buttons');
+
+        $but_set = $this->add('View',array(),'tags_buttons')->setClass('atk-move-right');
         foreach ($this->getTags() as $tag) {
+            $but_set->add('View')->setClass('atk-move-left tag_item')->set($tag)->js('click',
+                $projects_lister->js()->isotope(array(
+                    'filter' => '.izotag_'.$tag,
+                )));
+            /*
             $but_set->addButton($tag)->js('click',
                 $projects_lister->js()->isotope(array(
                     'filter' => '.izotag_'.$tag,
                 )));
+            */
         }
-        */
     }
 
     function getTags(){

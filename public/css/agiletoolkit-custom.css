@@ -13,3 +13,9 @@ body.page-index #atk-content{padding-top:1.618rem}body.page-index #atk-content .
 body.page-index #atk-footer{color:rgba(255,255,255,0.2)}
 body.page-team .team-block .atk-media{font-size:0;line-height:0;width:207px}body.page-team .team-block .atk-media a{display:inline-block;margin:2px}
 body.page-portfolio .project{width:25%}body.page-portfolio .project .thumbnail{font-size:0;line-height:0;margin-bottom:.809rem}
+
+
+.tag_item {margin:0 4px 0;cursor:pointer;color: #00f;}
+.tag_item:hover {color: red;}
+.show_label {float:right;margin:0px 10px 0 0;}
+
