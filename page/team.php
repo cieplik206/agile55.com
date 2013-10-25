@@ -18,7 +18,7 @@ class page_team extends Page {
                         'thumb' => 'vadim',
                     ),
                     14 => array ( 'name' => 'Oleksii', 'title' => 'Framework Developer', 'email' => '',
-                        'descr' => 'Oleksii has over 7 years experience in web-development and mobile applications.',
+                        'descr' => 'Oleksii has been a lead developer for web and mobile platforms for over 7 years. He extensively used technologies such as PHP, HTML, CSS, JavaScript, Agile Toolkit, Symfony, Ruby on Rails, Java for Android, MySQL and many others. He is a very crucial member of our team.',
                         'thumb' => 'alf',
                     ),
                     15 => array ( 'name' => 'Konstantin', 'title' => 'Framework Developer', 'email' => 'konstantin@agiletech.ie',
