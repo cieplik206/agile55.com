@@ -2,7 +2,10 @@
 class page_portfolio extends Page {
     function init(){
         parent::init();
-        $this->js(true)->_load('jquery.isotope.min');
+        $this->js(true)
+                ->_load('jquery.isotope.min')
+                ->_css('isotope')
+        ;
 
         //$tags_lister=$this->add('Lister_Tags',null,'tags');
         //$tags_lister->setSource($this->getTagHashes());
