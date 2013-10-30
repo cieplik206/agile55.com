@@ -21,7 +21,7 @@ class Frontend extends ApiFrontend {
         $this->add('jUI');
 
         $this->template->trySet('year',date('Y',time()));
-        
+
     }
 
     function initLayout(){
