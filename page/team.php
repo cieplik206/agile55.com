@@ -23,7 +23,7 @@ class page_team extends Page {
                     ),
                     15 => array ( 'name' => 'Konstantin', 'title' => 'Framework Developer', 'email' => 'konstantin@agiletech.ie',
                         'descr' => 'Konstantin has over 5 years experience in web-development.',
-                        'thumb' => 'kostya',
+                        'thumb' => 'kostya2',
                     ),
                     13 => array ( 'name' => 'Serhij', 'title' => 'Scalability Expert', 'email' => '',
                         'descr' => 'Stas is a system programmer, Linux administrator and our scalability specialist. He has over 10 years experience of working with companies relying on Linux, advising a number of large corporations on how to improve the scalability, security and efficiency of their server infrastructure. In addition to his commercial work, Stas is a part-time university professor and lecturer.',
