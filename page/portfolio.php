@@ -22,6 +22,8 @@ class page_portfolio extends Page {
             ),
         ));
 
+        $this->template->set('isotope_container',$projects_lister->name);
+
         // $('#container').isotope({ filter: '.metal' });
 
         $but_set = $this->add('View',array(),'tags_buttons')->setClass('atk-move-right');

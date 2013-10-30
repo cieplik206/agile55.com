@@ -1,5 +1,48 @@
 <div id="portfolio" class="section">
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            updateContainer();
+            $(window).resize(function() {
+                updateContainer();
+            });
+            //$('#<?$isotope_container?>').resize(function(){ $('#list').isotope('reLayout'); });
+        });
+        function updateContainer() {
+            var container = $('#<?$isotope_container?>');
+            container.css('background-color','red');
+            var isotope_item = $('.isotope-item').first();
+
+            var isotope_item_width = isotope_item.width();
+            console.log('----');
+            console.log(isotope_item.width());
+            console.log(isotope_item_width);
+            if (isotope_item_width > 0) {
+                var width = 0;
+                var last_width = 0;
+                console.log(width);
+                console.log(last_width);
+                for (var count= 0;count>=0;count++) {
+                    width = width + isotope_item_width;
+                    //console.log(width);
+                    if (width > container.width()) {
+                        var margin_left = (container.width() - last_width) / 2;
+                        container.css('padding-left',margin_left);
+                        console.log(width);
+                        console.log(last_width);
+                        console.log(margin_left);
+                        console.log(container.css('padding-left'));
+                        break;
+                    } else {
+                        last_width = width;
+                    }
+                }
+            }
+
+        }
+    </script>
+
+
         <div class="atk-cells atk-jackscrew atk-push">
             <h1 class="atk-cell atk-valign-middle">Portfolio</h1>
             <div class="tags atk-cell atk-valign-middle atk-align-right">
