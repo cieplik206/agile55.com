@@ -17,7 +17,15 @@ class Frontend extends ApiFrontend {
             //'template'=>'atk4-addons/misc/templates',
         ));
          */
-        
+
+        $this->pathfinder->addLocation('.',array(
+            'mail'=>array('atk4/mail','templates/mail'),
+//            'php'=>array('lib','../atk4-addons','../addons'),
+        ))
+            ->setBasePath(getcwd())
+//            ->setBaseURL($this->api->url('/').'/atk4')
+        ;
+
         $this->add('jUI');
 
         $this->template->trySet('year',date('Y',time()));
