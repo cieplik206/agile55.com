@@ -4,6 +4,7 @@
     },
     "require": {
         "atk4/atk4": "dev-master",
-        "agile55/ga": "dev-master"
+        "agile55/ga": "dev-master",
+        "phpmailer/phpmailer": "dev-master"
     }
 }
