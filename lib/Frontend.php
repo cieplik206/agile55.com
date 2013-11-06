@@ -63,7 +63,7 @@ class Frontend extends ApiFrontend {
     public $projects=array(
         // most important
         array(
-            'name'=>'The X-Factor - Fame Game',
+            'name'=>'The X Factor - Fame Game',
             'link'=>'portfolio/xfactor',
             'image'=>'images/portfolio/small-xfactor.jpg',
             'tags'=>array('development','design','hosting'),
