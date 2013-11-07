@@ -105,7 +105,7 @@ class Frontend extends ApiFrontend {
             'descr'=>'Yet another on-line financial project - Linked Finance is a peer-to-peer investment platform. Operating large amount of micro-investments this project rivals Kickstarter in its sophistication. Again - Agile Tookit have excelled at doing pristine job at getting the numbers to match'
         ),
         array(
-            'name'=>'surf-accounts',
+            'name'=>'SurfAccounts',
             'link'=>'portfolio/surfaccounts',
             'image'=>'images/portfolio/surf-accounts.png',
             'tags'=>array('design'),
@@ -144,21 +144,21 @@ class Frontend extends ApiFrontend {
 
 
         array(
-            'name'=>'zoubizous',
+            'name'=>'Zoubizous',
             'link'=>'portfolio/zoubizous',
             'image'=>'images/portfolio/zoubizous-profile.png',
             'tags'=>array('development','design'),
             'descr'=>'We have started to develop this project as a joint venture with a private investor, but had to stop after the initial build due to funding problems. We agreed to open-source the project and use it as a tutorial for anyone who wants to earn Agile Toolkit'
         ),
         array(
-            'name'=>'whitepier',
+            'name'=>'Whitepier',
             'link'=>'portfolio/whitepier',
             'image'=>'images/portfolio/whitepier.png',
             'tags'=>array('development','design'),
             'descr'=>'A startup company who were looking to develop a complex on-line RFQ submission, quotation and the rest of the project delivery in a highly controlled high-budget projects'
         ),
         array(
-            'name'=>'yapzar',
+            'name'=>'Yapzar',
             'link'=>'portfolio/yapzar',
             'image'=>'images/portfolio/yapzar.png',
             'tags'=>array(),
