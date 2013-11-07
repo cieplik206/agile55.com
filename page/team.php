@@ -14,7 +14,7 @@ class page_team extends Page {
                         'thumb' => 'alex',
                     ),
                     5 => array ( 'name' => 'Vadim', 'title' => 'Lead Developer', 'email' => '',
-                        'descr' => 'Vadim discovered Agile Toolkit after 6+ years experience developing in Ruby on Rails and Symfony. He quickly realised the potential behind Agile Toolkit and was very eager to join our core team at Agile Technologies. Vadim works on client projects, including Elexu™ and Plugin Manager.',
+                        'descr' => 'Vadym is our development lead and web software architect who manages a team of developers reporting to him. Vadym helps ensure our standards of development are consistent throughout the teams he manages. Vadym knows exactly how to solve any technical problem and who to assign or bring in, when specific expertise is sought or required by our business partners.',
                         'thumb' => 'vadim',
                     ),
                     14 => array ( 'name' => 'Oleksii', 'title' => 'Framework Developer', 'email' => '',
