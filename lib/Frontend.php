@@ -20,7 +20,7 @@ class Frontend extends ApiFrontend {
 
         $this->pathfinder->addLocation('.',array(
             'mail'=>array('atk4/mail','templates/mail'),
-//            'php'=>array('lib','../atk4-addons','../addons'),
+            'addons'=>array('atk4-addons','addons'),
         ))
             ->setBasePath(getcwd())
 //            ->setBaseURL($this->api->url('/').'/atk4')
@@ -40,6 +40,7 @@ class Frontend extends ApiFrontend {
         $this->api->router->link('portfolio_one',array(
             'base_page'
         ));
+        $this->add('ga\Controller_Tracker');
     }
 
     function initLayout(){
