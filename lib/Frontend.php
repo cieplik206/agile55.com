@@ -40,7 +40,7 @@ class Frontend extends ApiFrontend {
         $this->api->router->link('portfolio_one',array(
             'base_page'
         ));
-        $this->add('ga\Controller_Tracker');
+        $this->add('agile55/ga/Controller_Tracker');
     }
 
     function initLayout(){
