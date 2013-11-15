@@ -67,7 +67,7 @@ class Frontend extends ApiFrontend {
                     <img src="'.$this->pm->base_path.'images/powered_by_agile.png" alt="powered_by_agile">
                 </div>
                 <div class="atk-cell atk-align-right">
-                    <a href="'.$this->api->url('login').'">
+                    <a href="http://colubris.agiletech.ie/">
                         <span class="icon-key-1"></span>Client Login
                     </a>
                 </div>
