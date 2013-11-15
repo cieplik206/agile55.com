@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "atk4/atk4": "dev-master",
+        "atk4/atk4": "4.3.*@dev",
         "agile55/ga": "dev-master",
         "phpmailer/phpmailer": "dev-master",
         "atk4/atk-default-theme": "dev-master",
