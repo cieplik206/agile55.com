@@ -8,7 +8,7 @@ class page_contact extends Page {
         $f->addField('line', 'email', 'E-mail');
         $f->addField('line', 'phone', 'Phone');
         $f->addField('text', 'message', 'Message');
-        $f->addSubmit('Send');
+        $f->addSubmit('Send')->addClass('atk-button atk-swatch-emerald');
 
         if($f->isSubmitted()){
             if ($f->get('name')==""){

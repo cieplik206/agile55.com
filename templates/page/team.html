@@ -16,17 +16,15 @@
         <div class="span_8 col">
 
             <?Team?>
-            <div id="<?$_name?>" class="team-block atk-media-block atk-box atk-swatch-5">
-				
-				
-				
+            <div id="<?$_name?>" class="team-block atk-cells atk-cells-gutter atk-box atk-swatch-gray">
 
-                <div class="thumb-grid atk-media">
+                <div class="thumb-grid atk-cell">
                     <?bullet?>
                         <a <?selected?>class="selected"<?/?> href="<?$href?>"><img class="atk-shape-rounded" src="<?thumb?>temp/team-romans-on.jpg<?/?>" width="65" height="65" alt="" /></a>
                     <?/?>
                 </div>
-                <div class="atk-content" id="member-description">
+
+                <div class="atk-cell" id="member-description">
                 	<h3><?name?>Unknown Developer<?/?><div class="atk-size-nano"><?title?>simply wandered in<?/?></div></h3>
                     <?about?>
                     <p><?descr?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -35,6 +33,7 @@
                     <?/?>
 					<!-- <?$flip?> <?$contacts?> -->
         		</div>
+
         	</div>
             <?/?>
         </div>
