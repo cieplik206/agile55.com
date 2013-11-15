@@ -26,7 +26,7 @@ if [ -f composer.json ]; then
 fi
 
 say "Updating Agile Toolkit"
-( cd atk4; git pull origin master )
+( cd atk4; git pull origin 4.3 )
 
 say "Updating Agile Toolkit Old Addons"
 ( cd atk4-addons; git pull origin master )
