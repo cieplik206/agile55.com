@@ -40,7 +40,7 @@ class Frontend extends ApiFrontend {
         $this->api->router->link('portfolio_one',array(
             'base_page'
         ));
-//        $this->add('agile55/ga/Controller_Tracker');
+        $this->add('agile55/ga/Controller_Tracker');
 
         //TODO  This is to add class made by designer to the div which is in the shared.html
         $this->js(true)->_selector('#atk-main-inner')->addClass('content-part');
