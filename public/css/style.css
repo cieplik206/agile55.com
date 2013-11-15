@@ -5642,35 +5642,33 @@ header#worlds_birth > div nav ul li a:focus {
   top: -4px;
   font-size: 26px;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns {
+.atk-layout.content-part .row.description-columns {
   margin-bottom: 50px ;
   width: 960px;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4 .home-description-icon {
+.atk-layout.content-part .row.description-columns div.span_4 .home-description-icon {
   display: block;
   color: #c7454c;
   font-size: 50px;
   margin-bottom: -5px;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4 h3 {
+.atk-layout.content-part .row.description-columns div.span_4 h3 {
   margin: 0 0 20px 0;
-  color: #2c5559;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4 a {
+.atk-layout.content-part .row.description-columns div.span_4 a {
   color: #10a861;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4 a:hover {
+.atk-layout.content-part .row.description-columns div.span_4 a:hover {
   color: rgba(16, 168, 97, 0.7);
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4 p {
+.atk-layout.content-part .row.description-columns div.span_4 p {
   height: 200px;
-  color: #2c5559;
   margin: 0;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4:first-child {
+.atk-layout.content-part .row.description-columns div.span_4:first-child {
   padding-left: 0;
 }
-.atk-layout.content-part .row.atk-size-mega.description-columns div.span_4:last-child {
+.atk-layout.content-part .row.description-columns div.span_4:last-child {
   padding-right: 0;
 }
 /**************
