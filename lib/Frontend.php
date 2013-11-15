@@ -59,11 +59,11 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('contact','Contact');
 // Как по мне, то это бред
         $l->addFooter()->setHTML('
-            <div class="atk-cells atk-jackscrew footer-text">
+            <div class="atk-cells footer-text">
                 <div class="atk-cell">
-                    © 2013 Agile55
+                    © 1998 - 2013 Agile55 Limited
                 </div>
-                <div class="atk-cell atk-align-right">
+                <div class="atk-cell atk-align-center">
                     <img src="'.$this->pm->base_path.'images/powered_by_agile.png" alt="powered_by_agile">
                 </div>
                 <div class="atk-cell atk-align-right">
