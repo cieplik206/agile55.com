@@ -2,9 +2,22 @@
     "autoload": {
         "psr-0": {"": "lib/"}
     },
+
+    "repositories": [
+        {
+        "type": "vcs",
+        "url": "git@github.com:atk4/atk-default-theme.git"
+        },
+        {
+        "type": "vcs",
+        "url": "git@github.com:agiletech/agile55-template.git"
+        }
+    ],
     "require": {
         "atk4/atk4": "dev-master",
         "agile55/ga": "dev-master",
-        "phpmailer/phpmailer": "dev-master"
+        "phpmailer/phpmailer": "dev-master",
+        "atk4/atk-default-theme": "dev-master",
+        "agiletech/agile55-template": "dev-master"
     }
 }

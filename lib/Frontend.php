@@ -40,7 +40,11 @@ class Frontend extends ApiFrontend {
         $this->api->router->link('portfolio_one',array(
             'base_page'
         ));
-        $this->add('agile55/ga/Controller_Tracker');
+//        $this->add('agile55/ga/Controller_Tracker');
+
+        //TODO  This is to add class made by designer to the div which is in the shared.html
+        $this->js(true)->_selector('#atk-main-inner')->addClass('content-part');
+        $this->js(true)->_selector('#myrealm_layout_fluid_view_2')->addClass('footer-wrapper');
     }
 
     function initLayout(){
@@ -48,15 +52,27 @@ class Frontend extends ApiFrontend {
         $l = $this->add('Layout_Fluid');
 
         $m = $l->addMenu('MainMenu');
+        $m->addMenuItem('index','Home');
         $m->addMenuItem('services','Services');
         $m->addMenuItem('team','Team');
         $m->addMenuItem('portfolio','Portfolio');
         $m->addMenuItem('contact','Contact');
-
-        $l->addFooter()->setHTML('<div class="atk-cells atk-jackscrew"><div class="atk-cell">'.
-            'Powered by Agile Toolkit 4.3</div><div class="atk-cell atk-align-right"><a href="'.
-            $this->api->url('login')
-            .'"><span class="icon-key-1"></span>Client Login</a></div></div>');
+// Как по мне, то это бред
+        $l->addFooter()->setHTML('
+            <div class="atk-cells atk-jackscrew footer-text">
+                <div class="atk-cell">
+                    © 2013 Agile55
+                </div>
+                <div class="atk-cell atk-align-right">
+                    <img src="'.$this->pm->base_path.'images/powered_by_agile.png" alt="powered_by_agile">
+                </div>
+                <div class="atk-cell atk-align-right">
+                    <a href="'.$this->api->url('login').'">
+                        <span class="icon-key-1"></span>Client Login
+                    </a>
+                </div>
+            </div>
+        ');
 
         parent::initLayout();
     }

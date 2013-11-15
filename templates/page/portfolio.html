@@ -1,6 +1,6 @@
 <div id="portfolio" class="section">
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         $(document).ready(function () {
             updateContainer();
             $(window).resize(function() {
@@ -14,24 +14,24 @@
             var isotope_item = $('.isotope-item').first();
 
             var isotope_item_width = isotope_item.width();
-            console.log('----');
-            console.log(isotope_item.width());
-            console.log(isotope_item_width);
+//            console.log('----');
+//            console.log(isotope_item.width());
+//            console.log(isotope_item_width);
             if (isotope_item_width > 0) {
                 var width = 0;
                 var last_width = 0;
-                console.log(width);
-                console.log(last_width);
+//                console.log(width);
+//                console.log(last_width);
                 for (var count= 0;count>=0;count++) {
                     width = width + isotope_item_width;
                     //console.log(width);
                     if (width > container.width()) {
                         var margin_left = (container.width() - last_width) / 2;
                         container.css('padding-left',margin_left);
-                        console.log(width);
-                        console.log(last_width);
-                        console.log(margin_left);
-                        console.log(container.css('padding-left'));
+//                        console.log(width);
+//                        console.log(last_width);
+//                        console.log(margin_left);
+//                        console.log(container.css('padding-left'));
                         break;
                     } else {
                         last_width = width;
@@ -40,19 +40,15 @@
             }
 
         }
-    </script>
+    </script>-->
 
 
-        <div class="atk-cells atk-jackscrew atk-push">
-            <h1 class="atk-cell atk-valign-middle">Portfolio</h1>
-            <div class="tags atk-cell atk-valign-middle atk-align-right">
-                <!--<ul>-->
-                    <!--<?$tags?>-->
-                <!--</ul>-->
-
-                <?$tags_buttons?><div class="show_label">Show only: </div>
-            </div>
+    <div class="atk-cells atk-jackscrew atk-push">
+        <h1 class="atk-cell atk-valign-middle">Portfolio</h1>
+        <div class="tags atk-cell atk-valign-middle atk-align-right">
+            <?$tags_buttons?><div class="show_label">Show only: </div>
         </div>
-        <div class="cc"></div>
-            <?$projects?>
+    </div>
+    <div class="cc"></div>
+    <?$projects?>
 </div>
