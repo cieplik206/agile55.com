@@ -41,6 +41,10 @@ class Frontend extends ApiFrontend {
             'base_page'
         ));
         $this->add('agile55/ga/Controller_Tracker');
+
+        $this->template->set('title','Agile55');
+        $this->template->set('og_url', $this->url());
+        $this->template->set('og_img', $this->pm->base_path.'images/logo.png');
     }
 
     function initLayout(){
@@ -54,7 +58,7 @@ class Frontend extends ApiFrontend {
         $m->addMenuItem('team','Team');
         $m->addMenuItem('portfolio','Portfolio');
         $m->addMenuItem('contact','Contact');
-// Как по мне, то это бред
+
         $l->addFooter()->addClass('atk-swatch-seaweed atk-section-small')->setHTML('
             <div class="row atk-wrapper">
                 <div class="col span_4">
@@ -326,6 +330,4 @@ class Frontend extends ApiFrontend {
             'descr'=>'',
         ),
     );
-
-
 }
