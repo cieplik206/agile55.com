@@ -10,7 +10,7 @@
         },
         {
         "type": "vcs",
-        "url": "git@github.com:agiletech/agile55-template.git"
+        "url": "git@github.com:agile55/agile55-template.git"
         }
     ],
     "require": {
