@@ -42,9 +42,12 @@ class Frontend extends ApiFrontend {
         ));
         $this->add('agile55/ga/Controller_Tracker');
 
-        $this->template->set('title','Agile55');
-        $this->template->set('og_url', $this->url());
-        $this->template->set('og_img', $this->pm->base_path.'images/logo.png');
+        /*Meta tags*/
+        $this->template->set('page_title',$this->page.' - Agile55 Limited™ - Web Software Development');
+        $this->template->set('page_description', 'Agile55 Limited™ - Bespoke Web Software Development');
+        $this->template->set('page_keywords', 'Agile55,Web,Software,Development,site,ATK,ATK4,agiletoolkit,agile,toolkit,SaaS,Architecting,creative,MVC,ORM,framework,PHP,javascript,jquery,design,Capistrano,Git,UI');
+        $this->template->set('og_url', $this->url()->useAbsoluteUrl());
+        $this->template->set('og_img', $this->pm->base_url.$this->pm->base_path.'images/logo.png');
     }
 
     function initLayout(){
