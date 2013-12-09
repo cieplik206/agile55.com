@@ -31,6 +31,19 @@ class page_contact extends Page {
             $this->js()->univ()->alert('Your message was delivered')->execute();
         }
 
+        $this->add("View_HtmlElement",null,'tw_link')
+            ->setElement('A')
+            ->setAttr('href','https://twitter.com/intent/tweet?status='.$this->api->url('/')->useAbsoluteUrl())
+            ->setAttr('target','_blank')
+            ->addClass('twitter_share')
+        ;
+
+        $this->add("View_HtmlElement",null,'fb_link')->setElement('img')
+            ->setElement('A')
+            ->setAttr('href','https://www.facebook.com/sharer/sharer.php?u='.$this->api->url('/')->useAbsoluteUrl())
+            ->setAttr('target','_blank')
+            ->addClass('facebook_share')
+        ;
 
         $this->js(true)->_selector('#accordion')->accordion(array('collapsible'=>true,'active'=>false));
 

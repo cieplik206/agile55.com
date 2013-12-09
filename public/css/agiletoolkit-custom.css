@@ -30,19 +30,19 @@ body.page-portfolio .project .thumbnail img{width:220px;height:152px;}
 .tag_item:hover {color: red;}
 .show_label {float:right;margin:0px 6px 0 0;}
 
-.page_share a.twitter_share{
+.page-contact .social a.twitter_share{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 46px;
+    height: 46px;
     background: url("../images/facebook_twitter_icons.png");
     background-size: auto 100%;
-    background-position: 60px 0;
+    background-position: 46px 0;
     float: left;
 }
-.page_share a.facebook_share{
+.page-contact .social a.facebook_share{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 46px;
+    height: 46px;
     background: url("../images/facebook_twitter_icons.png");
     background-size: auto 100%;
     background-position: 0 0;
