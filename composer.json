@@ -10,7 +10,7 @@
         },
         {
         "type": "vcs",
-        "url": "git@github.com:agiletech/agile55-template.git"
+        "url": "git@github.com:agile55/agile55-theme.git"
         }
     ],
     "require": {
@@ -18,6 +18,6 @@
         "agile55/ga": "dev-master",
         "phpmailer/phpmailer": "dev-master",
         "atk4/atk-default-theme": "dev-master",
-        "agiletech/agile55-template": "dev-master"
+        "agile55/agile55-theme": "dev-master"
     }
 }
