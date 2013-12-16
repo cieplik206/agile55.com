@@ -1,16 +1,16 @@
-<<?element?>div<?/?> class="atk-lister atk-move-center <?$class?>" id="<?$_name?>"  style="padding-left: 35px">
-<?rows?><?row?>
+<{element}div{/} class="atk-lister atk-move-center {$class}" id="{$_name}"  style="padding-left: 35px">
+{rows}{row}
 
-<div class="isotope-item izotag_all <?$tags?>">
+<div class="isotope-item izotag_all {$tags}">
 	<div class="project atk-box atk-swatch-gray">
-	    <h3><a href="<?page?><?$link?><?/?>"><?$name?></a></h3>
-	    <a href="<?page?><?$link?><?/?>" class="thumbnail"><img src="<?template?><?$image?><?/?>" width="100%"/></a>
-	    <p><?descr?>Donec dolor sapien, sollicitudin in erat ac,
-	        pellentesque venenatis orci.<?/?></p>
-	    <div class="atk-comment"><?$tag_links?></div>
+	    <h3><a href="{page}{$link}{/}">{$name}</a></h3>
+	    <a href="{page}{$link}{/}" class="thumbnail"><img src="{template}{$image}{/}" width="100%"/></a>
+	    <p>{descr}Donec dolor sapien, sollicitudin in erat ac,
+	        pellentesque venenatis orci.{/}</p>
+	    <div class="atk-comment">{$tag_links}</div>
     </div>
 </div>
 
-<?/row?><?/rows?>
-<?$Content?>
-</<?element?>div<?/?>>
+{/row}{/rows}
+{$Content}
+</{element}div{/}>

@@ -45,6 +45,10 @@ class page_team extends Page {
                         'descr' => 'Janis is an associate web software architect; he joins our team for very complex projects. Janis knows exactly how to solve any technical problem.',
                         'thumb' => 'jancha',
                     ),
+                    17 => array ( 'name' => 'Ben Slawson', 'title' => 'Sales', 'email' => '',
+                        'descr' => 'With about a decade experience working in web industry Ben will manages our UK sales team.',
+                        'thumb' => 'benslawson',
+                    ),
                 )
             );
     }

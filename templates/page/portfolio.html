@@ -6,10 +6,10 @@
             $(window).resize(function() {
                 updateContainer();
             });
-            //$('#<?$isotope_container?>').resize(function(){ $('#list').isotope('reLayout'); });
+            //$('#{$isotope_container}').resize(function(){ $('#list').isotope('reLayout'); });
         });
         function updateContainer() {
-            var container = $('#<?$isotope_container?>');
+            var container = $('#{$isotope_container}');
             //container.css('background-color','red');
             var isotope_item = $('.isotope-item').first();
 
@@ -46,9 +46,9 @@
     <div class="atk-cells atk-jackscrew atk-push">
         <h1 class="atk-cell atk-valign-middle">Portfolio</h1>
         <div class="tags atk-cell atk-valign-middle atk-align-right">
-            <?$tags_buttons?><div class="show_label">Show only: </div>
+            {$tags_buttons}<div class="show_label">Show only: </div>
         </div>
     </div>
     <div class="cc"></div>
-    <?$projects?>
+    {$projects}
 </div>

@@ -1,4 +1,4 @@
-<?Content?>
+{Content}
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#company-photos>div>a:nth-child(2n)').css("marginRight","0");
@@ -8,80 +8,80 @@ $(document).ready(function(){
 
 <div class="col-layout c2 block">
 	<div>
-		<h1 class="wimg"><img src="<?template?>images/heading-whoarewe.png<?/?>" height="40" width="231" alt="Work" /></h1>
-		<?editable?>who-we-are
+		<h1 class="wimg"><img src="{template}images/heading-whoarewe.png{/}" height="40" width="231" alt="Work" /></h1>
+		{editable}who-we-are
 		<p>Agile Technologies is a specialized web agency in Dublin. We are usability, security and web development experts. Our team develops best solutions for SME’s around Ireland and aboard.</p><p>Agile Technologies Ltd. was found by Gita Malinovska and Romans Malinovskis on 2007. We are constantly growing with improving our service and over 10 people are now working for us. We work on our projects collaboratively with our Ukraine, Latvian and Russian developers. Together we offer affordable and unlimited resources, ready to complete any project.</p>
-		<?/?>
+		{/}
 	</div>
 	<div id="whyus">
-		<h1 class="wimg"><img src="<?template?>images/heading-whyus.png<?/?>" height="40" width="151" alt="Work" /></h1>
-		<?editable?>why-us
+		<h1 class="wimg"><img src="{template}images/heading-whyus.png{/}" height="40" width="151" alt="Work" /></h1>
+		{editable}why-us
 		<p>Each project is unique in its own way. Our team has technical expertise to find the right solution for you. Agile way is to always collaborate with client to make project successful. Most of our projects is using Agile Toolkit - unique built framework to help deliver solutions quicker.</p>
-		<?/?>
+		{/}
         <!--
 		<div class="hr hr-small"></div>
-		<div class="icon-32-wdesc"><img src="<?template?>images/icon-brochuredownload.png<?/?>" /><a
+		<div class="icon-32-wdesc"><img src="{template}images/icon-brochuredownload.png{/}" /><a
 		href="http://files.agiletech.ie/agile_prices_2011.pdf">Price Packages</a><br/><span class="comment">Guide prices
 		for our services</span></div>
 -->
 	</div>
 </div>
 <div class="col-layout c2 block" id="team-block">
-	<?Team?>
-	<div id="<?$_name?>">
+	{Team}
+	<div id="{$_name}">
 		<h2>Our Team</h2>
 		<div id="ourteam">
 			<span></span>
 			<div id="team-members">
 				<div class="thumb-grid">
-				   <?bullet?>
-					<a <?selected?>class="selected"<?/?> href="<?$href?>"><i></i><b></b><img src="<?thumb?>temp/team-romans-on.jpg<?/?>" width="65" height="65" alt="" /></a>
-				   <?/?>
+				   {bullet}
+					<a {selected}class="selected"{/} href="{$href}"><i></i><b></b><img src="{thumb}temp/team-romans-on.jpg{/}" width="65" height="65" alt="" /></a>
+				   {/}
 				</div>
 			</div>
 			<div id="member-description">
-				<h4><?name?>Unknown Developer<?/?><span><?title?>simply wandered in<?/?></span></h4>
-				<?about?>
-				<p><?descr?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+				<h4>{name}Unknown Developer{/}<span>{title}simply wandered in{/}</span></h4>
+				{about}
+				<p>{descr}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-				aliquip ex ea commodo consequat.<?/?></p>
+				aliquip ex ea commodo consequat.{/}</p>
 				<div class="contacts">
-					<?twitterBlock?>
-					<div><img src="/templates/jui/images/teammember-twitter.png" alt="" width="28" height="18" /><a href="<?$twitter?>">Twitter</a></div>
-					<?/twitterBlock?>
-					<?emailBlock?>
-					<div><img src="/templates/jui/images/teammember-mail.png" alt="" width="25" height="18" /><?$email?></div>
-					<?/emailBlock?>
-					<?linkedinBlock?>
-					<div><img src="/templates/jui/images/teammember-linkedin.png" alt="" width="21" height="21" /><a href="<?$linkedin?>">Linked in</a></div>
-					<?/linkedinBlock?>
-					<?googleBlock?>
-					<div><img src="/templates/jui/images/teammember-mail.png" alt="" width="25" height="18" /><a href="<?$google?>">Google</a></div>
-					<?/googleBlock?>
-					<?facebookBlock?>
-					<div><img src="/templates/jui/images/teammember-facebook.png" alt="" width="21" height="21" /><a href="<?$facebook?>">Facebook</a></div>
-					<?/facebookBlock?>
-					<?blogBlock?>
-					<div><img src="/templates/jui/images/teammember-blog.png" alt="" width="22" height="24" /><a href="<?$blog?>">Blog</a></div>
-					<?/blogBlock?>
+					{twitterBlock}
+					<div><img src="/templates/jui/images/teammember-twitter.png" alt="" width="28" height="18" /><a href="{$twitter}">Twitter</a></div>
+					{/twitterBlock}
+					{emailBlock}
+					<div><img src="/templates/jui/images/teammember-mail.png" alt="" width="25" height="18" />{$email}</div>
+					{/emailBlock}
+					{linkedinBlock}
+					<div><img src="/templates/jui/images/teammember-linkedin.png" alt="" width="21" height="21" /><a href="{$linkedin}">Linked in</a></div>
+					{/linkedinBlock}
+					{googleBlock}
+					<div><img src="/templates/jui/images/teammember-mail.png" alt="" width="25" height="18" /><a href="{$google}">Google</a></div>
+					{/googleBlock}
+					{facebookBlock}
+					<div><img src="/templates/jui/images/teammember-facebook.png" alt="" width="21" height="21" /><a href="{$facebook}">Facebook</a></div>
+					{/facebookBlock}
+					{blogBlock}
+					<div><img src="/templates/jui/images/teammember-blog.png" alt="" width="22" height="24" /><a href="{$blog}">Blog</a></div>
+					{/blogBlock}
 				</div>
-				<?/?>
+				{/}
 <!--
-				<?contacts?>
+				{contacts}
 				<div class="contacts">
-					<img src="<?template?>images/teammember-twitter.png<?/?>" alt="" width="28" height="18" /><a href="#">Twitter</a>
-					<img src="<?template?>images/teammember-mail.png<?/?>" alt="" width="25" height="18" /><a href="#">E-mail</a>
+					<img src="{template}images/teammember-twitter.png{/}" alt="" width="28" height="18" /><a href="#">Twitter</a>
+					<img src="{template}images/teammember-mail.png{/}" alt="" width="25" height="18" /><a href="#">E-mail</a>
 				</div>
-				<?/?>
+				{/}
 
-				<?$flip?>-->
+				{$flip}-->
 			</div>
 		</div>
 	</div>
-	<?/?>
+	{/}
 	<div id="testimonials">
 		<h3>What people say about us</h3>
-		<?editable?>what-people-say-about-us
+		{editable}what-people-say-about-us
 		<div>
 			<p>“We’ve been extremely satisfied with the speed and professionalism of Agile Technologies team. You managed deliver a web solution for our existing mobile friend-finder in very short time-frame.”</p>
 			<div>Ronan Higgins<span>CEO, Locle.com, Ireland</span></div>
@@ -90,24 +90,24 @@ $(document).ready(function(){
 			<p>“Agile Technologies managed to optimise our existing Web 2.0 system, and now it works much faster than before. It’s not so easy to find a company that does their work well. But they are doing their job PERFECTLY.”</p>
 			<div>Barry Cronin<span>CTO, www.transpoco.com, Ireland</span></div>
 		</div>
-		<?/?>
+		{/}
 	</div>
 </div>
 <div class="col-layout c2">
 	<div id="news-list">
-		<?NewsList?>
-		<div id="<?$_name?>">
+		{NewsList}
+		<div id="{$_name}">
 		<h2>Company <a href="/news">News</a></h2>
-		<?$empty_lister_result?>
+		{$empty_lister_result}
 		<ul>
-		<?rows?>
-			<?row?>
-			<li><a href="/news/<?$year?>/<?$url?>"><?$title?></a><span><b><?$formated_date?></b></span></li>
-			<?/row?>
-		<?/rows?>
+		{rows}
+			{row}
+			<li><a href="/news/{$year}/{$url}">{$title}</a><span><b>{$formated_date}</b></span></li>
+			{/row}
+		{/rows}
 		</ul>
 		</div>
-		<?/NewsList?>
+		{/NewsList}
 		<!--
 		<ul>
 			<li><a href="#">US 'to revamp' drilling watchdog</a><span><b>June 19, 2010</b></span></li>
@@ -117,16 +117,16 @@ $(document).ready(function(){
 			<li><a href="#">Euro plummets to new dollar low  </a><span><b>September 13, 2010</b></span></li>
 		</ul>
 		-->
-<!-- 		<?$moreNews?> -->
+<!-- 		{$moreNews} -->
 	</div>
 	<div id="company-photos">
 		<h2>Few photos from our company's life</h2>
 		<div>
-		<a href="<?template?>images/iia_congres09_c.jpg<?/?>" title="Gita at IIA Congress" class="f_box"><i></i><b></b><img src="<?template?>temp/day-1.jpg<?/?>" alt="" width="226" height="66" /></a>
-		<a href="<?template?>images/our_brochures_c.jpg<?/?>" title="Agile at epicenter Software Show" class="f_box"><i></i><b></b><img src="<?template?>temp/day-2.jpg<?/?>" alt="" width="226" height="66" /></a>
-		<a href="<?template?>images/dsc06803_c.jpg<?/?>" title=" Launching of SortMyBooksOnline" class="f_box"><i></i><b></b><img src="<?template?>temp/day-3.jpg<?/?>" alt="" width="226" height="66" /></a>
-		<a href="<?template?>images/dsc03470_c.jpg<?/?>" title="Romans and Gita at Inspired IT Awards" class="f_box"><i></i><b></b><img src="<?template?>temp/day-4.jpg<?/?>" alt="" width="226" height="66" /></a>
+		<a href="{template}images/iia_congres09_c.jpg{/}" title="Gita at IIA Congress" class="f_box"><i></i><b></b><img src="{template}temp/day-1.jpg{/}" alt="" width="226" height="66" /></a>
+		<a href="{template}images/our_brochures_c.jpg{/}" title="Agile at epicenter Software Show" class="f_box"><i></i><b></b><img src="{template}temp/day-2.jpg{/}" alt="" width="226" height="66" /></a>
+		<a href="{template}images/dsc06803_c.jpg{/}" title=" Launching of SortMyBooksOnline" class="f_box"><i></i><b></b><img src="{template}temp/day-3.jpg{/}" alt="" width="226" height="66" /></a>
+		<a href="{template}images/dsc03470_c.jpg{/}" title="Romans and Gita at Inspired IT Awards" class="f_box"><i></i><b></b><img src="{template}temp/day-4.jpg{/}" alt="" width="226" height="66" /></a>
 		</div>
 	</div>
 </div>
-<?/?>
+{/}
