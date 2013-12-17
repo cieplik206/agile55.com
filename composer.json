@@ -10,14 +10,14 @@
         },
         {
         "type": "vcs",
-        "url": "git@github.com:agile55/agile55-theme.git"
+        "url": "git@github.com:atk4/agiletoolkit-css.git"
         }
     ],
     "require": {
         "atk4/atk4": "4.3.*@dev",
         "agile55/ga": "dev-master",
         "phpmailer/phpmailer": "dev-master",
-        "atk4/atk-default-theme": "dev-master",
+        "atk4/agiletoolkit-css": "dev-master",
         "agile55/agile55-theme": "dev-master"
     }
 }
