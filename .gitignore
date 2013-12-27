@@ -18,3 +18,5 @@ PHPMailer/*
 autoconfig/*
 autodiscover/*
 logs/*
+
+public/css/css/style.css
