@@ -35,6 +35,7 @@ class Frontend extends ApiFrontend {
                  */
         $this->add('Controller_PatternRouter');
         $this->router->addRule('(portfolio\/)(.*)','portfolio_one',array('id','url_hash'));
+        $this->router->link('time',array('t'));
         $this->router->route();
         // cat/one => /:category/:id-:hash_url
         $this->api->router->link('portfolio_one',array(
