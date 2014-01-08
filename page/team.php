@@ -13,8 +13,13 @@ class page_team extends Page {
                         'descr' => 'Alex runs the company. He has 9 years of top managerial experience in complex multi-million development projects in different industries. Alex has financial and legal education from top ranking European business schools.',
                         'thumb' => 'alex',
                     ),
-                    17 => array ( 'name' => 'Ben Slawson', 'title' => 'Sales', 'email' => '',
-                        'descr' => 'With about a decade experience working in web industry Ben will manages our UK sales team.',
+                    17 => array ( 'name' => 'Ben Slawson', 'title' => 'New Business Director', 'email' => '',
+                        'descr' => 'Ben has over 10 years of digital expertise across website design, development
+                        and e-commerce for SME and corporate business\'s both UK and globally.
+                        With experience as a Creative Director working with web development teams he is
+                        skilled at understanding and translating client needs and online requirements.
+                        Ben works with the Agile55 team in a new business development capacity to
+                        support clients in achieving their digital and commercial website project goals.',
                         'thumb' => 'benslawson',
                     ),
                     5 => array ( 'name' => 'Vadim', 'title' => 'Lead Developer', 'email' => '',

@@ -6,10 +6,6 @@
     "repositories": [
         {
         "type": "vcs",
-        "url": "git@github.com:atk4/atk-default-theme.git"
-        },
-        {
-        "type": "vcs",
         "url": "git@github.com:atk4/agiletoolkit-css.git"
         }
     ],
