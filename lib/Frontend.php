@@ -69,7 +69,7 @@ class Frontend extends ApiFrontend {
                     © 1998 - 2013 Agile55 Limited
                 </div>
                 <div class="col span_4 atk-align-center">
-                    <img src="'.$this->pm->base_path.'images/powered_by_agile.png" alt="powered_by_agile">
+                    <a href="http://agiletoolkit.org/" target="_blank"><img src="'.$this->pm->base_path.'images/powered_by_agile.png" alt="powered_by_agile"></a>
                 </div>
                 <div class="col span_4 atk-align-right">
                     <a href="http://colubris.agiletech.ie/">

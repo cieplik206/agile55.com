@@ -27,7 +27,7 @@ class page_contact extends Page {
             $m->setTemplate('contact');
             $m->set($f->get());
             $m->set('subject','Contact Request from'.$f->get('name'));
-            $x=$m->send($this->api->getConfig('tmail/from'));
+            $x=$m->send($this->api->getConfig('tmail/contact'));
             $this->js()->univ()->alert('Your message was delivered')->execute();
         }
 
