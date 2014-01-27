@@ -5814,7 +5814,6 @@ ul[class*=atk-menu] > li > a.atk-cells .atk-label[class*='icon']:before {
 }
 ul[class*=atk-menu] > li > a {
   float: left;
-  min-width: 100%;
   white-space: nowrap;
 }
 ul[class*=atk-menu] > li *[class*=atk-menu] {
