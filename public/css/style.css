@@ -6501,7 +6501,7 @@ a.atk-swatch-gray:hover,
   background: url(../images/hero.jpg) no-repeat;
   height: 350px;
 }
-.page-index .hero h1 {
+.page-index .hero .title {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .thumb-grid {
