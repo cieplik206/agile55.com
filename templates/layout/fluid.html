@@ -1,16 +1,36 @@
 <div class="atk-layout">
-{$Header}{$Main_Menu}
-    <div id="atk-main" class="atk-layout-row fluid">
-        <div id="atk-main-inner" class="atk-layout">
-            {$LeftBar}
-            <div id="atk-content" class="atk-layout-column fluid atk-content">
-                <div class=" atk-wrapper atk-section" style="padding-top: 0px">
-                    {$Content}
+    <div class="atk-layout-row">
+        <div class="atk-layout-cell">
+            <div class="atk-wrapper atk-section">
+                <div class="atk-cells atk-text-nowrap atk-cells-gutter">
+                    <div class="atk-cell atk-valign-middle atk-jackscrew">
+                        <a href="{public}{/}" class="atk-logo">
+                            <img src="{public}images/logo.png{/}" alt="Agile Toolkit">
+                        </a>
+                    </div>
+                    <div class="atk-cell atk-valign-middle">
+                        {$Main_Menu}
+                    </div>
                 </div>
             </div>
-            {$RightBar}
-
         </div>
     </div>
+
+    <div class="atk-layout-row">
+        <div class="atk-layout atk-layout-cell">
+            <div class="atk-layout-column atk-layout-fluid">
+                <div class="atk-section-small">
+                    <div class="atk-wrapper">
+                        {$LeftBar}
+                        <div class="atk-layout-column atk-layout-fluid">
+                            {$Content}
+                        </div>
+                        {$RightBar}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {$Footer}
 </div>
