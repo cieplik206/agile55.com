@@ -1,168 +1,4 @@
 @import "agiletoolkit-custom.css";
-.atk-swatch-emerald {
-  color: white;
-  background: #12bf6f;
-  border-color: #12bf6f;
-}
-.atk-swatch-emerald hr {
-  border-color: #000;
-}
-.atk-swatch-emerald,
-.atk-swatch-emerald a,
-.atk-swatch-emerald h1,
-.atk-swatch-emerald h2,
-.atk-swatch-emerald h3,
-.atk-swatch-emerald h4,
-.atk-swatch-emerald h5,
-.atk-swatch-emerald h6 {
-  color: white;
-}
-.atk-swatch-emerald[class*=icon-] {
-  background: none;
-  color: #12bf6f;
-}
-.atk-swatch-emerald[class*=icon-][class*=atk-shape] {
-  color: white;
-  background: #12bf6f;
-}
-a.atk-swatch-emerald:hover,
-.atk-swatch-emerald[class*=atk-button]:hover {
-  color: white;
-  background: #14d67d;
-}
-.atk-swatch-emerald[class*='atk-button'],
-.atk-swatch-emerald.atk-label,
-.atk-table td.atk-swatch-emerald,
-.atk-table th.atk-swatch-emerald {
-  color: white;
-  background: #12bf6f;
-  border-color: #12bf6f;
-}
-.atk-swatch-emerald[class*='atk-button'] {
-  border-color: #0e9054;
-}
-.atk-swatch-emerald[class*='atk-button']:hover {
-  border-color: #0e9054;
-}
-.atk-swatch-seaweed {
-  color: white;
-  background: #2c5559;
-  border-color: #2c5559;
-}
-.atk-swatch-seaweed hr {
-  border-color: #000;
-}
-.atk-swatch-seaweed,
-.atk-swatch-seaweed a,
-.atk-swatch-seaweed h1,
-.atk-swatch-seaweed h2,
-.atk-swatch-seaweed h3,
-.atk-swatch-seaweed h4,
-.atk-swatch-seaweed h5,
-.atk-swatch-seaweed h6 {
-  color: white;
-}
-.atk-swatch-seaweed[class*=icon-] {
-  background: none;
-  color: #2c5559;
-}
-.atk-swatch-seaweed[class*=icon-][class*=atk-shape] {
-  color: white;
-  background: #2c5559;
-}
-a.atk-swatch-seaweed:hover,
-.atk-swatch-seaweed[class*=atk-button]:hover {
-  color: white;
-  background: #34656a;
-}
-.atk-swatch-seaweed[class*='atk-button'],
-.atk-swatch-seaweed.atk-label,
-.atk-table td.atk-swatch-seaweed,
-.atk-table th.atk-swatch-seaweed {
-  color: white;
-  background: #2c5559;
-  border-color: #2c5559;
-}
-.atk-swatch-seaweed[class*='atk-button'] {
-  border-color: #1b3437;
-}
-.atk-swatch-seaweed[class*='atk-button']:hover {
-  border-color: #1b3437;
-}
-.atk-swatch-gray {
-  color: black;
-  background: #f5f6f7;
-  border-color: #f5f6f7;
-}
-.atk-swatch-gray hr {
-  border-color: #000;
-}
-.atk-swatch-gray,
-.atk-swatch-gray a,
-.atk-swatch-gray h1,
-.atk-swatch-gray h2,
-.atk-swatch-gray h3,
-.atk-swatch-gray h4,
-.atk-swatch-gray h5,
-.atk-swatch-gray h6 {
-  color: black;
-}
-.atk-swatch-gray[class*=icon-] {
-  background: none;
-  color: #f5f6f7;
-}
-.atk-swatch-gray[class*=icon-][class*=atk-shape] {
-  color: black;
-  background: #f5f6f7;
-}
-a.atk-swatch-gray:hover,
-.atk-swatch-gray[class*=atk-button]:hover {
-  color: black;
-  background: #ffffff;
-}
-.atk-swatch-gray[class*='atk-button'],
-.atk-swatch-gray.atk-label,
-.atk-table td.atk-swatch-gray,
-.atk-table th.atk-swatch-gray {
-  color: black;
-  background: #f5f6f7;
-  border-color: #f5f6f7;
-}
-.atk-swatch-gray[class*='atk-button'] {
-  border-color: #d9dde0;
-}
-.atk-swatch-gray[class*='atk-button']:hover {
-  border-color: #d9dde0;
-}
-.page-index .hero {
-  background: url(../images/hero.jpg) no-repeat;
-  height: 350px;
-}
-.page-index .hero h1 {
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.thumb-grid {
-  width: 207px;
-}
-.atk-menu li a {
-  color: #2c5559;
-}
-.atk-menu li.atk-state-active a {
-  color: #12bf6f;
-}
-#atk-footer {
-  border-top: 5px solid #12bf6f;
-}
-#atk-footer,
-#atk-footer a {
-  color: rgba(244, 244, 255, 0.498039);
-}
-hr {
-  background: #e1e1e1;
-}
-.agile55-no-margin {
-  margin-top: 0px;
-}
 /**
  * Gridpak Beta LESS
  *
@@ -6258,8 +6094,8 @@ a.atk-swatch-white:hover,
 }
 .atk-swatch-gray {
   color: black;
-  background: #f5f6f7;
-  border-color: #f5f6f7;
+  background: #f1f1f2;
+  border-color: #f1f1f2;
 }
 .atk-swatch-gray hr {
   border-color: #000;
@@ -6276,30 +6112,30 @@ a.atk-swatch-white:hover,
 }
 .atk-swatch-gray[class*=icon-] {
   background: none;
-  color: #f5f6f7;
+  color: #f1f1f2;
 }
 .atk-swatch-gray[class*=icon-][class*=atk-shape] {
   color: black;
-  background: #f5f6f7;
+  background: #f1f1f2;
 }
 a.atk-swatch-gray:hover,
 .atk-swatch-gray[class*=atk-button]:hover {
   color: black;
-  background: #ffffff;
+  background: #fefefe;
 }
 .atk-swatch-gray[class*='atk-button'],
 .atk-swatch-gray.atk-label,
 .atk-table td.atk-swatch-gray,
 .atk-table th.atk-swatch-gray {
   color: black;
-  background: #f5f6f7;
-  border-color: #f5f6f7;
+  background: #f1f1f2;
+  border-color: #f1f1f2;
 }
 .atk-swatch-gray[class*='atk-button'] {
-  border-color: #d9dde0;
+  border-color: #d7d7d9;
 }
 .atk-swatch-gray[class*='atk-button']:hover {
-  border-color: #d9dde0;
+  border-color: #d7d7d9;
 }
 .atk-swatch-ink {
   color: white;
@@ -6393,8 +6229,8 @@ a.atk-swatch-yellow:hover,
 }
 .atk-swatch-red {
   color: white;
-  background: #f9451f;
-  border-color: #f9451f;
+  background: #c7454c;
+  border-color: #c7454c;
 }
 .atk-swatch-red hr {
   border-color: #000;
@@ -6411,30 +6247,30 @@ a.atk-swatch-yellow:hover,
 }
 .atk-swatch-red[class*=icon-] {
   background: none;
-  color: #f9451f;
+  color: #c7454c;
 }
 .atk-swatch-red[class*=icon-][class*=atk-shape] {
   color: white;
-  background: #f9451f;
+  background: #c7454c;
 }
 a.atk-swatch-red:hover,
 .atk-swatch-red[class*=atk-button]:hover {
   color: white;
-  background: #fa5a38;
+  background: #cd595f;
 }
 .atk-swatch-red[class*='atk-button'],
 .atk-swatch-red.atk-label,
 .atk-table td.atk-swatch-red,
 .atk-table th.atk-swatch-red {
   color: white;
-  background: #f9451f;
-  border-color: #f9451f;
+  background: #c7454c;
+  border-color: #c7454c;
 }
 .atk-swatch-red[class*='atk-button'] {
-  border-color: #df2c06;
+  border-color: #a73238;
 }
 .atk-swatch-red[class*='atk-button']:hover {
-  border-color: #df2c06;
+  border-color: #a73238;
 }
 .atk-swatch-green {
   color: white;
@@ -6527,3 +6363,167 @@ a.atk-swatch-blue:hover,
   border-color: #0077cc;
 }
 /* Use this less file if you want to customize your theme. */
+.atk-swatch-emerald {
+  color: white;
+  background: #12bf6f;
+  border-color: #12bf6f;
+}
+.atk-swatch-emerald hr {
+  border-color: #000;
+}
+.atk-swatch-emerald,
+.atk-swatch-emerald a,
+.atk-swatch-emerald h1,
+.atk-swatch-emerald h2,
+.atk-swatch-emerald h3,
+.atk-swatch-emerald h4,
+.atk-swatch-emerald h5,
+.atk-swatch-emerald h6 {
+  color: white;
+}
+.atk-swatch-emerald[class*=icon-] {
+  background: none;
+  color: #12bf6f;
+}
+.atk-swatch-emerald[class*=icon-][class*=atk-shape] {
+  color: white;
+  background: #12bf6f;
+}
+a.atk-swatch-emerald:hover,
+.atk-swatch-emerald[class*=atk-button]:hover {
+  color: white;
+  background: #14d67d;
+}
+.atk-swatch-emerald[class*='atk-button'],
+.atk-swatch-emerald.atk-label,
+.atk-table td.atk-swatch-emerald,
+.atk-table th.atk-swatch-emerald {
+  color: white;
+  background: #12bf6f;
+  border-color: #12bf6f;
+}
+.atk-swatch-emerald[class*='atk-button'] {
+  border-color: #0e9054;
+}
+.atk-swatch-emerald[class*='atk-button']:hover {
+  border-color: #0e9054;
+}
+.atk-swatch-seaweed {
+  color: white;
+  background: #2c5559;
+  border-color: #2c5559;
+}
+.atk-swatch-seaweed hr {
+  border-color: #000;
+}
+.atk-swatch-seaweed,
+.atk-swatch-seaweed a,
+.atk-swatch-seaweed h1,
+.atk-swatch-seaweed h2,
+.atk-swatch-seaweed h3,
+.atk-swatch-seaweed h4,
+.atk-swatch-seaweed h5,
+.atk-swatch-seaweed h6 {
+  color: white;
+}
+.atk-swatch-seaweed[class*=icon-] {
+  background: none;
+  color: #2c5559;
+}
+.atk-swatch-seaweed[class*=icon-][class*=atk-shape] {
+  color: white;
+  background: #2c5559;
+}
+a.atk-swatch-seaweed:hover,
+.atk-swatch-seaweed[class*=atk-button]:hover {
+  color: white;
+  background: #34656a;
+}
+.atk-swatch-seaweed[class*='atk-button'],
+.atk-swatch-seaweed.atk-label,
+.atk-table td.atk-swatch-seaweed,
+.atk-table th.atk-swatch-seaweed {
+  color: white;
+  background: #2c5559;
+  border-color: #2c5559;
+}
+.atk-swatch-seaweed[class*='atk-button'] {
+  border-color: #1b3437;
+}
+.atk-swatch-seaweed[class*='atk-button']:hover {
+  border-color: #1b3437;
+}
+.atk-swatch-gray {
+  color: black;
+  background: #f1f1f2;
+  border-color: #f1f1f2;
+}
+.atk-swatch-gray hr {
+  border-color: #000;
+}
+.atk-swatch-gray,
+.atk-swatch-gray a,
+.atk-swatch-gray h1,
+.atk-swatch-gray h2,
+.atk-swatch-gray h3,
+.atk-swatch-gray h4,
+.atk-swatch-gray h5,
+.atk-swatch-gray h6 {
+  color: black;
+}
+.atk-swatch-gray[class*=icon-] {
+  background: none;
+  color: #f1f1f2;
+}
+.atk-swatch-gray[class*=icon-][class*=atk-shape] {
+  color: black;
+  background: #f1f1f2;
+}
+a.atk-swatch-gray:hover,
+.atk-swatch-gray[class*=atk-button]:hover {
+  color: black;
+  background: #fefefe;
+}
+.atk-swatch-gray[class*='atk-button'],
+.atk-swatch-gray.atk-label,
+.atk-table td.atk-swatch-gray,
+.atk-table th.atk-swatch-gray {
+  color: black;
+  background: #f1f1f2;
+  border-color: #f1f1f2;
+}
+.atk-swatch-gray[class*='atk-button'] {
+  border-color: #d7d7d9;
+}
+.atk-swatch-gray[class*='atk-button']:hover {
+  border-color: #d7d7d9;
+}
+.page-index .hero {
+  background: url(../images/hero.jpg) no-repeat;
+  height: 350px;
+}
+.page-index .hero h1 {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.thumb-grid {
+  width: 207px;
+}
+.atk-menu li a {
+  color: #2c5559;
+}
+.atk-menu li.atk-state-active a {
+  color: #12bf6f;
+}
+#atk-footer {
+  border-top: 5px solid #12bf6f;
+}
+#atk-footer,
+#atk-footer a {
+  color: rgba(244, 244, 255, 0.498039);
+}
+hr {
+  background: #e1e1e1;
+}
+.agile55-no-margin {
+  margin-top: 0px;
+}

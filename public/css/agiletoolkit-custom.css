@@ -1,3 +1,7 @@
+.atk-menu > li a{
+    font-weight: normal!important;
+    font-size: 18px;
+}
 body.page-team .team-block .atk-media{font-size:0;line-height:0;width:207px}
 body.page-team .team-block .atk-media a{display:inline-block;margin:2px}
 body.page-portfolio .isotope-item{width:300px}
